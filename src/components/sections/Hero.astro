@@ -1,0 +1,46 @@
+---
+import { basics } from "../../../cv.json";
+
+const { name, label, image, location, profiles, phone, email } = basics;
+
+const { city, region } = location;
+---
+
+<section>
+  <div class="container">
+    <div class="info">
+      <h1>{name}</h1>
+      <h2>{label}</h2>
+      <span>
+        <!-- robar icono  -->
+        {city}, {region}
+      </span>
+      <footer>
+        {
+          email && (
+            <a
+              href={`mailto:${email}`}
+              title={`Enviar un correo electrónico a ${name} al correo ${email}`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+            📭
+            </a>
+          )
+        }
+      </footer>
+      <figure>
+        <img src={image} alt={name} width="200px">
+      </figure>
+    </div>
+  </div>
+
+  ---
+</section>
+
+<style>
+  section {
+    max-width: 700px;
+    margin: 0 auto 72px;
+  }
+</style>

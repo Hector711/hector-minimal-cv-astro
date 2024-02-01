@@ -1,3 +1,16 @@
 {
-  "extends": "astro/tsconfigs/strict"
+  "extends": "astro/tsconfigs/strict",
+  // para que al poner @/* se refiera a source "src"
+  // nos facilita un monton de donde vienen los componentes 
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@cv": [
+        "./cv.json"
+      ],
+      "@/*": [
+        "src/*"
+      ]
+    }
+  }
 }
