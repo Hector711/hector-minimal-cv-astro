@@ -3,6 +3,7 @@
   "type": "module",
   "version": "0.0.1",
   "scripts": {
+    "start:ide": "pnpm install && pnpm run dev",
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro check && astro build",
@@ -10,8 +11,9 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^4.3.0",
     "@astrojs/check": "^0.4.1",
+    "astro": "^4.3.0",
+    "ninja-keys": "^1.2.2",
     "typescript": "^5.3.3"
   }
 }

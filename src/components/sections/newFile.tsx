@@ -1,43 +1,39 @@
----
 import Section from "../Section.astro";
-
 import { projects } from "cv.json";
----
 
+<Fragment>
 <Section title="Projectos">
-  <ul>
-    {
-      projects.map(({ name, url, isActive, year, highlights, description }) => {
-        return (
-          <li>
-            <article>
-              <header>
-                <h3>
-                <a href={url} title={`Ver el proyecto ${name}`}>
-                    {name}
-                    </a>
-                    {isActive && <span>&bull;</span>}
-                    </h3>
-                    <p>{description}</p>
-              </header>
-              <footer>
-                  {highlights.map((highlight) => {
-                    return <span>{highlight}</span>;
-                  })}
-              </footer>
-            </article>
-          </li>
-        );
-      })
-    }
-  </ul>
+<ul>
+{projects.map(({ name, url, isActive, year, highlights, description }) => {
+return (
+<Fragment><li>
+<article>
+<header>
+<h3>
+<a href={url} title={`Ver el proyecto ${name}`}>
+{name}
+</a>
+{isActive && <Fragment><spa>&bull;</spa></Fragment>}
+</h3>
+<p>{description}</p>
+</header>
+<footer>
+{highlights.map((highlight) => {
+return <Fragment><span>{highlight}</span></Fragment>;
+})}
+</footer>
+</article>
+</li></Fragment>
+);
+})}
+</ul>
 </Section>
 
-<style>
+<style>{`
   ul {
     display: grid;
     grid-template-columns: 
-      repeat(auto-fit, minmax(200px, 1fr));
+      /* repeat(auto-fit,minmax(200px, 1fr)); */
       gap: 1rem;
   }
 
@@ -70,9 +66,6 @@ import { projects } from "cv.json";
     margin-bottom: 4px;
 
   }
-  article h3 span {
-    color: rgb(2, 202, 52);
-  }
 
   footer {
     display: flex;
@@ -90,4 +83,6 @@ import { projects } from "cv.json";
     padding: 0.2rem 0.6rem;
     display: inline-flex;
   }
-</style>
+`}</style>
+
+</Fragment>;

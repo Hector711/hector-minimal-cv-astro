@@ -1,110 +1,163 @@
 {
   "basics": {
+    "nickname": "Héctor",
     "name": "Héctor Luengo Guerra",
-    "label": "Full Stack Programmer",
-    "image": "./foto.jpeg",
+    "label": "Programador Senior Full Stack",
+    "image": "https://avatars.githubusercontent.com/hector711",
     "email": "hectorluengo.xx@gmail.com",
     "phone": "+34 722396259",
     "url": "github/hector711.io",
-    "summary": "A summary of John Doe…",
+    "dni": "06020333Z",
+    "birth": "15/04/1997",
+    "summary": "Programador Full Stack con muchas ganas de empezar a trabajar programar.",
     "location": {
-      "address": "Calle Pizarro 24",
+      "address": "Calle Pizarro 24 3ºDrch",
       "postalCode": "28004",
       "city": "Madrid",
       "countryCode": "ES",
       "region": "Spain"
     },
-    "profiles": [{
-      "network": "Twitter",
-      "username": "john",
-      "url": "https://twitter.com/john"
-    }]
+    "profiles": [
+      {
+        "network": "X",
+        "username": "vltraensorial",
+        "url": "https://twitter.com/vltrasensorial"
+      },
+      {
+        "network": "GitHub",
+        "username": "Hector711",
+        "url": "https://github.com/Hector711"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "Hector711",
+        "url": "https://www.linkedin.com/in/hector711/"
+      }
+    ]
   },
-  "work": [{
-    "name": "Company",
-    "position": "President",
-    "url": "https://company.com",
-    "startDate": "2013-01-01",
-    "endDate": "2014-01-01",
-    "summary": "Description…",
-    "highlights": [
-      "Started the company"
-    ]
-  }],
-  "volunteer": [{
-    "organization": "Organization",
-    "position": "Volunteer",
-    "url": "https://organization.com/",
-    "startDate": "2012-01-01",
-    "endDate": "2013-01-01",
-    "summary": "Description…",
-    "highlights": [
-      "Awarded 'Volunteer of the Month'"
-    ]
-  }],
-  "education": [{
-    "institution": "University",
-    "url": "https://institution.com/",
-    "area": "Software Development",
-    "studyType": "Bachelor",
-    "startDate": "2011-01-01",
-    "endDate": "2013-01-01",
-    "score": "4.0",
-    "courses": [
-      "DB1101 - Basic SQL"
-    ]
-  }],
-  "awards": [{
-    "title": "Award",
-    "date": "2014-11-01",
-    "awarder": "Company",
-    "summary": "There is no spoon."
-  }],
-  "certificates": [{
-    "name": "Certificate",
-    "date": "2021-11-07",
-    "issuer": "Company",
-    "url": "https://certificate.com"
-  }],
-  "publications": [{
-    "name": "Publication",
-    "publisher": "Company",
-    "releaseDate": "2014-10-01",
-    "url": "https://publication.com",
-    "summary": "Description…"
-  }],
-  "skills": [{
-    "name": "Web Development",
-    "level": "Master",
-    "keywords": [
-      "HTML",
-      "CSS",
-      "JavaScript"
-    ]
-  }],
-  "languages": [{
-    "language": "English",
-    "fluency": "Native speaker"
-  }],
-  "interests": [{
-    "name": "Wildlife",
-    "keywords": [
-      "Ferrets",
-      "Unicorns"
-    ]
-  }],
-  "references": [{
-    "name": "Jane Doe",
-    "reference": "Reference…"
-  }],
-  "projects": [{
-    "name": "Project",
-    "startDate": "2019-01-01",
-    "endDate": "2021-01-01",
-    "description": "Description...",
-    "highlights": [
-      "Won award at AIHacks 2016"
-    ],
-    "url": "https://project.com/"
-  }]
+  "work": [
+    {
+      "name": "Tako Away",
+      "position": "Auxiliar de tienda",
+      "url": "",
+      "startDate": "1/11/2016",
+      "endDate": "1/10/2018",
+      "summary": "",
+      "highlights": [
+        ""
+      ]
+    },
+    {
+      "name": "Música Creativa",
+      "position": "Técnico Sonido",
+      "url": "",
+      "startDate": "1/5/2018",
+      "endDate": "1/10/2019",
+      "summary": "",
+      "highlights": [
+        ""
+      ]
+    },
+    {
+      "name": "We Are Sales",
+      "position": "Comercial de ventas",
+      "url": "",
+      "startDate": "1/11/2019",
+      "endDate": "1/11/2020",
+      "summary": "",
+      "highlights": [
+        ""
+      ]
+    },
+    {
+      "name": "Restaurante A'BARRA",
+      "position": "Camarero",
+      "url": "",
+      "startDate": "1/11/2020",
+      "endDate": "1/11/2021",
+      "summary": "",
+      "highlights": [
+        ""
+      ]
+    },
+    {
+      "name": "Restaurante Harvey's Cockatil Bar",
+      "position": "Coctelero",
+      "url": "",
+      "startDate": "1/6/2022",
+      "endDate": "1/6/2023",
+      "summary": "",
+      "highlights": [
+        ""
+      ]
+    }
+  ],
+  "education": [
+    {
+      "name": "Full Stack Web Developer",
+      "institution": "The Bridge School",
+      "date": "15-04-2023",
+      "url": "https://thebridge.com"
+    },
+    {
+      "name": "Bartender",
+      "institution": "ESCOM",
+      "date": "1-06-2022",
+      "url": "https://www.escuelacocteleria.es"
+    },
+    {
+      "name": "Técnico Sonido",
+      "institution": "Escuela Música Creativa",
+      "date": "1-06-2021",
+      "url": "https://musicacreativa.com"
+    }
+  ],
+  "projects": [
+    {
+      "name": "NEO Social",
+      "isActive": true,
+      "year": "2024",
+      "description": "La red social que te llevará al siguiente nivel",
+      "highlights": [
+        "React",
+        "Express",
+        "Astro"
+      ],
+      "url": "https://project.com/"
+    },
+    {
+      "name": "Mi Página Web",
+      "isActive": true,
+      "year": "2024",
+      "description": "Description...",
+      "highlights": [
+        "React",
+        "Express",
+        "Astro"
+      ],
+      "url": "https://project.com/"
+    },
+    {
+      "name": "Spotify Web",
+      "isActive": true,
+      "year": "2024",
+      "description": "Description...",
+      "highlights": [
+        "React",
+        "Express",
+        "Astro"
+      ],
+      "url": "https://project.com/"
+    }
+  ],
+  "languages": [
+    {
+      "language": "Español",
+      "fluency": "Nativo"
+    },
+    {
+      "language": "English",
+      "fluency": "C1"
+    }
+  ]
 }
