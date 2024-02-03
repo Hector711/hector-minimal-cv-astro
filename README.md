@@ -9,6 +9,7 @@ Aquí podrás encontrar una versión minimalista de mi currículum, donde ademá
 ###### Link al video 
 
 
-[========]
+------------
 
+------------
 ###### 2024-02-03 01:13:05 Saturday
