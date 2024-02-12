@@ -1,40 +1,38 @@
 ---
 // import Layout from '@/layouts/Layout.astro';
-import Layout from '../layouts/Layout.astro'
+import Layout from "../layouts/Layout.astro";
 
-import About from '../components/sections/About.astro';
-import Education from '../components/sections/Education.astro';
-import Experience from '../components/sections/Experience.astro';
-import Hero from '../components/sections/Hero.astro';
-import Projects from '../components/sections/Projects.astro';
-import KeyboardManager from '../components/KeyboardManager.astro';
+import About from "../components/sections/About.astro";
+import Education from "../components/sections/Education.astro";
+import Experience from "../components/sections/Experience.astro";
+import Hero from "../components/sections/Hero.astro";
+import Projects from "../components/sections/Projects.astro";
+import KeyboardManager from "../components/KeyboardManager.astro";
 
 import { basics } from "cv.json";
- const { nickname } = basics;
-
+const { nickname } = basics;
 ---
 
 <Layout title=`${nickname} Minimalist Portfolio`>
+  <main>
+    <Hero />
+    <About />
+    <Education />
+    <Projects />
+    <Experience />
+    <!-- <Languages /> -->
+  </main>
 
-	<main>
-		<Hero />
-		<About />
-		<Education />
-		<Experience />
-		<Projects />
-		<!-- <Languages /> -->
-
-	</main>
-
-	<KeyboardManager />
+  <KeyboardManager />
 </Layout>
 
 <style>
+  main {
+    background-color: #ededed;
+    /* background-color: #1c1c1e; */
 
-	main {
-		background-color: #ffffff;
-		padding:4rem;
-		margin:auto;
-		width: 100%;
-	}
+    padding: 4rem;
+    margin: auto;
+    width: 100%;
+  }
 </style>

@@ -2,14 +2,14 @@
   "basics": {
     "nickname": "Héctor",
     "name": "Héctor Luengo Guerra",
-    "label": "Programador Senior Full Stack",
-    "image": "https://avatars.githubusercontent.com/hector711",
+    "label": "Programador Junior Full Stack",
+    "image": "https://i.ibb.co/YhTCcWd/carnet2024.jpg",
     "email": "hectorluengo.xx@gmail.com",
     "phone": "+34 722396259",
     "url": "github/hector711.io",
     "dni": "06020333Z",
     "birth": "15/04/1997",
-    "summary": "Programador Full Stack con muchas ganas de empezar a trabajar programar.",
+    "summary": "Desarrollador junior con planes a largo plazo en el mundo de la tecnología.",
     "location": {
       "address": "Calle Pizarro 24 3ºDrch",
       "postalCode": "28004",
@@ -96,19 +96,19 @@
     {
       "name": "Full Stack Web Developer",
       "institution": "The Bridge School",
-      "date": "15-04-2023",
-      "url": "https://thebridge.com"
+      "endDate": "Abril 2024",
+      "url": "https://www.thebridge.tech"
     },
     {
       "name": "Bartender",
       "institution": "ESCOM",
-      "date": "1-06-2022",
+      "endDate": "Junio 2022",
       "url": "https://www.escuelacocteleria.es"
     },
     {
       "name": "Técnico Sonido",
       "institution": "Escuela Música Creativa",
-      "date": "1-06-2021",
+      "endDate": "Junio 2021",
       "url": "https://musicacreativa.com"
     }
   ],

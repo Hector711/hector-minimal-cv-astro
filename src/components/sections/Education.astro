@@ -1,9 +1,41 @@
 ---
-import Section from "../Section.astro"
+import Section from "../Section.astro";
 
+import { education } from "cv.json";
+
+
+ 
 ---
 
+
+
+
 <Section title="Education">
+  <ul>
 
+    
 
+    {
+      education.map(({ name, institution, endDate, url }) => {
+
+        return (
+          <li>
+            <article>
+              <header>
+                <h3>
+                  {name}
+                  <span>en</span>
+                  <a href={url} title={`Pagina web de ${url}`}>
+                    {" "}
+                    {institution}
+                  </a>
+                </h3>
+                <span>{endDate}</span>
+              </header>
+            </article>
+          </li>
+        );
+      })
+    }
+  </ul>
 </Section>
