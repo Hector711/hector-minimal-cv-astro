@@ -22,17 +22,20 @@
         "network": "X",
         "username": "vltraensorial",
         "url": "https://twitter.com/vltrasensorial",
-        "icon": "https://cdn-icons-png.flaticon.com/512/25/25231.png"
+        "icon": "https://cdn2.iconfinder.com/data/icons/threads-by-instagram/24/x-logo-twitter-new-brand-512.png"
       },
       {
         "network": "GitHub",
         "username": "Hector711",
-        "url": "https://github.com/Hector711"
+        "url": "https://github.com/Hector711",
+        "icon": "https://cdn-icons-png.flaticon.com/512/25/25231.png"
       },
       {
         "network": "LinkedIn",
         "username": "Hector711",
-        "url": "https://www.linkedin.com/in/hector711/"
+        "url": "https://www.linkedin.com/in/hector711/",
+        "icon": "https://image.similarpng.com/very-thumbnail/2021/01/Linkedin-icon-design-premium-vector-PNG.png",
+        "icon2": "https://cdn3.iconfinder.com/data/icons/picons-social/57/11-linkedin-512.png"
       }
     ]
   },
