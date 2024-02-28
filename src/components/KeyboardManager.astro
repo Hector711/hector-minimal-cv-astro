@@ -1,5 +1,5 @@
 ---
-import { basics } from "cv.json";
+import { basics } from "cv-es.json";
 
 const { profiles } = basics;
 
@@ -105,6 +105,8 @@ const SOCIAL_ICONS: Record<string, string> = {
 </script>
 
 <style>
+   @import url('../variables.css');
+
   @media print {
     ninja-keys {
       display: none !important;
@@ -121,8 +123,8 @@ const SOCIAL_ICONS: Record<string, string> = {
   }
 
   footer {
-    background: #fdfdfd;
-    border-top: 1px solid #eee;
+    background: var(--white);
+    border-top: 1px solid var(--softGrey);
     position: fixed;
     bottom: 0px;
     width: 100%;
@@ -140,7 +142,7 @@ const SOCIAL_ICONS: Record<string, string> = {
   }
 
   kbd {
-    background: #eee;
+    background: var(--light);
     border-radius: 4px;
     padding: 2px 4px;
     font-size: 12px;

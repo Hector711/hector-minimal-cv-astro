@@ -1,7 +1,7 @@
 ---
 import Section from "../Section.astro";
 
-import { work } from "cv.json";
+import { work } from "cv-es.json";
 ---
 
 <Section title="Experience">
@@ -38,9 +38,11 @@ import { work } from "cv.json";
 
 
 <style>
-  /* * {
-    border: 1px solid black;
-  } */
+  @import url('../../variables.css');
+
+  * {
+    /* border: 1px solid black; */
+  }
   ul {
     display: flex;
     flex-direction: column;
@@ -48,11 +50,9 @@ import { work } from "cv.json";
   }
   article h3{
     font-weight: 500;
-    color: #111;
   }
 
   article h4 {
-    color: #222;
     font-weight: 400;
   }
 
@@ -64,7 +64,7 @@ import { work } from "cv.json";
   }
 
   time { 
-    color: #666;
+    color: var(--softGrey);
     font-size: 0.85rem;
   }
 

@@ -8,9 +8,9 @@ import Experience from "../components/sections/Experience.astro";
 import Hero from "../components/sections/Hero.astro";
 import Projects from "../components/sections/Projects.astro";
 import KeyboardManager from "../components/KeyboardManager.astro";
-
-import { basics } from "cv.json";
+import { basics } from "cv-es.json";
 const { nickname } = basics;
+
 ---
 
 <Layout title=`${nickname} Minimalist Portfolio`>
@@ -26,13 +26,4 @@ const { nickname } = basics;
   <KeyboardManager />
 </Layout>
 
-<style>
-  main {
-    background-color: #ededed;
-    /* background-color: #1c1c1e; */
 
-    padding: 4rem;
-    margin: auto;
-    width: 100%;
-  }
-</style>

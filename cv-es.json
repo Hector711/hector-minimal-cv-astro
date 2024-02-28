@@ -6,10 +6,10 @@
     "image": "https://i.ibb.co/YhTCcWd/carnet2024.jpg",
     "email": "hectorluengo.xx@gmail.com",
     "phone": "+34 722396259",
-    "url": "github/hector711.io",
+    "url": "https://hector711.github.io",
     "dni": "06020333Z",
     "birth": "15/04/1997",
-    "summary": "Desarrollador principiante con un profundo interés en la programación y una firme determinación de ingresar al mundo tecnológico. Busco activamente mi primera oportunidad laboral como programador, con la ambición de construir una carrera sólida y gratificante en este emocionante campo en constante evolución.",
+    "summary": "Desarrollador principiante con un profundo interés en la programación y una firme determinación de ingresar al mundo tecnológico. Busco activamente mi primera oportunidad laboral como programador, con la ambición de construir una carrera sólida y gratificante en este campo en constante evolución.",
     "location": {
       "address": "Calle Pizarro 24 3ºDrch",
       "postalCode": "28004",
@@ -35,7 +35,7 @@
         "username": "vltraensorial",
         "url": "https://twitter.com/vltrasensorial",
         "icon": "https://cdn2.iconfinder.com/data/icons/threads-by-instagram/24/x-logo-twitter-new-brand-512.png"
-      }      
+      }
     ]
   },
   "work": [
@@ -120,37 +120,27 @@
       "name": "NEO Social",
       "isActive": true,
       "year": "2024",
-      "description": "La red social que te llevará al siguiente nivel",
+      "description": "Proximamente...",
       "highlights": [
-        "React",
-        "Express",
-        "Astro"
+        "ReactJS",
+        "NextJS",
+        "Tailwind",
+        "SQL"
       ],
-      "url": "https://project.com/"
+      
+      "url": "..."
     },
     {
-      "name": "Mi Página Web",
-      "isActive": true,
+      "name": "RACKS Wallpaper",
+      "isActive": false,
       "year": "2024",
-      "description": "Description...",
+      "description": "Con cariño dedicado a la comunidad Racks: ¡Personaliza tu escritorio y mejora tu productividad con este wallpaper al estilo Racks!",
       "highlights": [
         "React",
-        "Express",
-        "Astro"
+        "NextJS",
+        "Tailwind"
       ],
-      "url": "https://project.com/"
-    },
-    {
-      "name": "Spotify Web",
-      "isActive": true,
-      "year": "2024",
-      "description": "Description...",
-      "highlights": [
-        "React",
-        "Express",
-        "Astro"
-      ],
-      "url": "https://project.com/"
+      "url": "..."
     }
   ],
   "languages": [
@@ -162,5 +152,10 @@
       "language": "English",
       "fluency": "C1"
     }
-  ]
+  ],
+  "extras": {
+    "specialMessage": "Es posible que estés agotad@ de revisar tantos portfolios y currículums... Por eso he preparado un breve video de 1 minuto donde comparto todo lo que necesitas saber sobre mí. ¡Espero que lo encuentres interesante! :)",
+    "videoResumeLink": "",
+    "specialMessage2": "Perhaps you're tired of reviewing so many portfolios and resumes... That's why I've prepared a brief 1-minute video where I share everything you need to know about me. I hope you find it interesting!"
+  }
 }

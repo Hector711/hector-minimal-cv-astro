@@ -1,5 +1,5 @@
 ---
-import { basics } from "../../../cv.json";
+import { basics } from "../../../cv-es.json";
 import Section from "../Section.astro";
 import Mail from "../../icons/Mail.astro";
 import Phone from "../../icons/Phone.astro";
@@ -33,50 +33,57 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ");
         <WorldMap />
         {city}, {region}
       </span>
-      <footer class="print">
+      <footer id="print">
+
+        <!-- QR DE CONTACTO -->
         {printInfo}
       </footer>
-      <footer class="no-print">
-        {
-          email && (
-            <a
-              href={`mailto:${email}`}
-              title={`Enviar un correo electrónico a ${name} al correo ${email}`}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Mail />
-            </a>
-          )
-        }
-        {
-          phone && (
-            <a
-              href={`tel:${phone}`}
-              title={`Llamar por teléfono ${name} al número ${phone}`}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Phone />
-            </a>
-          )
-        }
-        {
-          profiles.map(({ network, url, username }) => {
-            const Icon = SOCIAL_ICONS[network];
-
-            return (
+      <footer id="no-print">
+        <div id="profiles">
+          {
+            email && (
               <a
-                href={url}
-                title={`Visitar el perfil de ${name} en ${network}`}
+                href={`mailto:${email}`}
+                title={`Enviar un correo electrónico a ${name} al correo ${email}`}
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Icon />
+                <Mail />
               </a>
-            );
-          })
-        }
+            )
+          }
+          {
+            phone && (
+              <a
+                href={`tel:${phone}`}
+                title={`Llamar por teléfono ${name} al número ${phone}`}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Phone />
+              </a>
+            )
+          }
+          {
+            profiles.map(({ network, url, username }) => {
+              const Icon = SOCIAL_ICONS[network];
+
+              return (
+                <a
+                  href={url}
+                  title={`Visitar el perfil de ${name} en ${network}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Icon />
+                </a>
+              );
+            })
+          }
+        </div>
+        <a id="webPage" target="_blank" href={basics.url}>
+          <p>Official Web Page</p>
+        </a>
       </footer>
     </div>
     <figure>
@@ -87,6 +94,11 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ");
 
 <!-- ========================= ESTILOS ========================= -->
 <style>
+  @import url("../../variables.css");
+
+  * {
+    /* border: 1px solid black; */
+  }
   .container {
     display: flex;
     flex-direction: row;
@@ -102,10 +114,11 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ");
   }
 
   h1 {
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
+
   h2 {
-    color: #444;
+    color: var(--softGrey);
     font-weight: 500;
     font-size: 1.1rem;
     text-wrap: balance;
@@ -113,14 +126,13 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ");
 
   img {
     aspect-ratio: 1/1;
-    width: 100%;
     object-fit: cover;
     width: 128px;
     border-radius: 25px;
   }
 
   span {
-    color: #666;
+    color: var(--softGrey);
     display: flex;
     align-items: center;
     gap: 0.25rem;
@@ -130,19 +142,32 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ");
 
   footer {
     display: flex;
-    gap: 8px;
-    margin: 8px;
-    margin-left: 0;
-
-    font-size: 0.7rem;
-    color: #777;
+    flex-direction: column;
   }
 
+  footer, #profiles {
+    width: min-content ;
+  }
+
+  #profiles,
+  #webPage {
+    display: flex;
+    gap: 8px;
+    margin-left: 0;
+    margin-block: 4px;
+
+    font-size: 0.7rem;
+    color: var(--softGrey);
+  }
+  #webPage {
+    width: 100%;
+  }
+ 
   footer a {
-    color: #777;
+    color: var(--softGrey);
     display: inline-flex;
     align-items: center;
-    border: 1px solid #999;
+    border: 1px solid var(--softGrey);
     justify-content: center;
     padding: 4px;
     height: 32px;
@@ -152,7 +177,9 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ");
   }
 
   footer a:hover {
-    background: #eee;
-    border: 1px solid #ffffff;
+    background: var(--light);
+    border: 2px solid var(--white);
   }
+  
+
 </style>

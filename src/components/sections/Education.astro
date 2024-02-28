@@ -1,7 +1,7 @@
 ---
 import Section from "../Section.astro";
 
-import { education } from "cv.json";
+import { education } from "cv-es.json";
 
 
  
@@ -12,9 +12,6 @@ import { education } from "cv.json";
 
 <Section title="Education">
   <ul>
-
-    
-
     {
       education.map(({ name, institution, endDate, url }) => {
 
@@ -24,8 +21,8 @@ import { education } from "cv.json";
               <header>
                 <h3>
                   {name}
-                  <span>en</span>
-                  <a href={url} title={`Pagina web de ${url}`}>
+                  <span id="lightWeight">en</span>
+                  <a href={url} target="_blank" title={`Pagina web de ${url}`}>
                     {" "}
                     {institution}
                   </a>
@@ -39,3 +36,14 @@ import { education } from "cv.json";
     }
   </ul>
 </Section>
+
+<style>
+  @import url('../../variables.css');
+
+ 
+
+  #lightWeight { 
+    font-weight: 400;
+    color: var(--softGrey);
+  }
+</style>
