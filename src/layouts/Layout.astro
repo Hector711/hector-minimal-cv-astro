@@ -1,6 +1,6 @@
 ---
 // Supports weights 100-900
-import '@fontsource-variable/onest';
+import "@fontsource-variable/onest";
 interface Props {
   title: string;
 }
@@ -25,36 +25,24 @@ const { title } = Astro.props;
 
 <!--  ESTILOS  -->
 <style is:global>
-  @import url('../variables.css');
-  
-  * { 
+  @import url("../variables.css");
+
+  * {
     /* border: 0.5px solid black; */
   }
-  
+
   html {
-    font-family:
-      'Onest Variable',
-      BlinkMacSystemFont,
-      "Segoe UI",
-      Roboto,
-      Oxygen,
-      Ubuntu,
-      Cantarell,
-      "Open Sans",
-      "Helvetica Neue",
-      sans-serif
-      ;
+    font-family: "Onest Variable", BlinkMacSystemFont, "Segoe UI", Roboto,
+      Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     background-color: var(--softWhite);
     letter-spacing: -0.0005rem;
   }
-
 
   main {
     padding: 4rem;
     margin: auto;
     width: 100%;
   }
-
 
   body,
   figure {
@@ -66,8 +54,6 @@ const { title } = Astro.props;
     text-decoration: none;
     color: var(--darkGrey);
   }
-
-
 
   ul {
     list-style: none;
@@ -87,7 +73,7 @@ const { title } = Astro.props;
   h4 {
     margin: 0;
     font-family:
-    'Onest Variable',
+      "Onest Variable",
       system-ui,
       -apple-system,
       BlinkMacSystemFont,
@@ -100,11 +86,10 @@ const { title } = Astro.props;
       "Helvetica Neue",
       sans-serif;
 
-    color: var(--black)
+    color: var(--black);
   }
 
-
-  h3{
+  h3 {
     font-weight: 600;
   }
 
@@ -115,9 +100,8 @@ const { title } = Astro.props;
     margin: 0;
     text-wrap: pretty;
     word-wrap: break-word;
-    
   }
-  
+
   @media print {
     #no-print {
       display: none;
@@ -136,6 +120,15 @@ const { title } = Astro.props;
     }
     html {
       background-color: var(--totalWhite) !important;
+    }
+    p,
+    span,
+    h2,
+    time {
+      color: var(--darkGrey) !important;
+    }
+    article p {
+      width: 550px !important;
     }
   }
 </style>

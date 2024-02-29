@@ -93,17 +93,6 @@
       "highlights": [
         ""
       ]
-    },
-    {
-      "company": "Tako Away",
-      "position": "Auxiliar de tienda",
-      "url": "https://www.tako-away.es/",
-      "startDate": "1/11/2016",
-      "endDate": "1/10/2018",
-      "summary": "Como auxiliar de tienda en una franquicia de comida mexicana, mantuve el orden, la limpieza y asistí en el servicio al cliente..",
-      "highlights": [
-        ""
-      ]
     }
   ],
   "education": [
@@ -167,7 +156,6 @@
   ],
   "extras": {
     "specialMessage": "Es posible que estés agotad@ de revisar tantos portfolios y currículums... Por eso he preparado un breve video de 1 minuto donde comparto todo lo que necesitas saber sobre mí. ¡Espero que lo encuentres interesante! :)",
-    "videoResumeLink": "",
-    "specialMessage2": "Perhaps you're tired of reviewing so many portfolios and resumes... That's why I've prepared a brief 1-minute video where I share everything you need to know about me. I hope you find it interesting!"
+    "videoResumeLink": ""
   }
 }
