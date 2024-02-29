@@ -17,9 +17,9 @@ import { work } from "cv-es.json";
         return (
           <li>
             <article>
-              <div>
+              <div id="hero">
                 <header>
-                  <div>
+                  <div id="arrow">
                     <Arrow />
                   </div>
                   <h3>
@@ -45,7 +45,7 @@ import { work } from "cv-es.json";
   @import url("../../variables.css");
 
   * {
-    /* border: 0.5px solid black; */
+    /* border: 0.5px solid #ff0000; */
   }
 
   a:hover {
@@ -86,16 +86,27 @@ import { work } from "cv-es.json";
 
   article p {
     margin-left: 19px;
-    width: 550px;
     font-size: 0.9rem;
     line-height: 1.3rem;
-    margin-top: 5px
+    margin-top: 5px;
   }
-
-  
+  article #hero {
+    width: 80%;
+  }
 
   article time {
     color: var(--softGrey);
     font-size: 0.85rem;
+    
+  }
+  
+  @media screen and (max-width: 670px) {
+    article time {
+      display: flex;
+      justify-content: center;
+      align-items: start;
+      
+      text-align: center;
+    }
   }
 </style>

@@ -8,7 +8,8 @@ import GitHub from "../../icons/GitHub.astro";
 import LinkedIn from "../../icons/LinkedIn.astro";
 import LocationIcon from "../../icons/LocationIcon.astro";
 
-const { name, label, image, location, profiles, phone, email, nickname } = basics;
+const { name, label, image, location, profiles, phone, email, nickname } =
+  basics;
 const { city, region } = location;
 
 const SOCIAL_ICONS: Record<string, any> = {
@@ -17,13 +18,11 @@ const SOCIAL_ICONS: Record<string, any> = {
   X,
 };
 
+const linkedInInfo = profiles.find(({ network }) => network === "LinkedIn");
+const linkedUsername = linkedInInfo?.username;
 
-const linkedInInfo = profiles.find(({ network }) => network === "LinkedIn")
-const linkedUsername = linkedInInfo?.username
-
-const githubInfo = profiles.find(({ network }) => network === "GitHub")
-const githubUsername = githubInfo?.username
-
+const githubInfo = profiles.find(({ network }) => network === "GitHub");
+const githubUsername = githubInfo?.username;
 ---
 
 <Section>
@@ -40,7 +39,7 @@ const githubUsername = githubInfo?.username
         </div>
       </span>
       <footer id="print">
-        <p>Email: {basics.email}</>
+        <p>Email: {basics.email}</p>
         <p>Telef.: {basics.phone}</p>
         <p>LinkedIn: {linkedUsername}</p>
         <p>GitHub: {githubUsername}</p>
@@ -88,7 +87,12 @@ const githubUsername = githubInfo?.username
             })
           }
         </div>
-        <a id="webPage" target="_blank" title=`Visitar la pagina web de ${nickname}` href={basics.url}>
+        <a
+          id="webPage"
+          target="_blank"
+          title=`Visitar la pagina web de ${nickname}`
+          href={basics.url}
+        >
           <p>Pagina Web Oficial</p>
         </a>
       </footer>
@@ -161,8 +165,9 @@ const githubUsername = githubInfo?.username
     flex-direction: column;
   }
 
-  footer, #profiles {
-    width: min-content ;
+  footer,
+  #profiles {
+    width: min-content;
   }
 
   #profiles,
@@ -178,7 +183,7 @@ const githubUsername = githubInfo?.username
   #webPage {
     width: 100%;
   }
- 
+
   footer a {
     color: var(--softGrey);
     display: inline-flex;
@@ -196,6 +201,21 @@ const githubUsername = githubInfo?.username
     background: var(--light);
     border: 2px solid var(--softWhite);
   }
-  
 
+  @media screen and (max-width: 670px) {
+    .container {
+      display: flex;
+      flex-direction: column-reverse;
+      * {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+    
+    h1 {
+      text-align: center;
+
+    }
+  }
 </style>

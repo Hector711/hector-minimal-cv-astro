@@ -39,7 +39,8 @@ const { title } = Astro.props;
   }
 
   main {
-    padding: 4rem;
+    padding-inline: 4rem;
+    padding-block: 4rem;
     margin: auto;
     width: 100%;
   }
@@ -114,6 +115,10 @@ const { title } = Astro.props;
     color: var(--softGrey);
   }
 
+  #arrow {
+    color:  var(--black);
+  }
+
   @media print {
     #print {
       display: block !important;
@@ -131,4 +136,31 @@ const { title } = Astro.props;
       width: 550px !important;
     }
   }
+
+  @media screen and (max-width: 670px) {
+    main {
+      padding-inline: 2rem;
+      padding-block: 4rem;
+    }
+    #arrow {
+      display: flex;
+      justify-content: start;
+      align-items: start;
+      padding-top: 4px;
+    }
+
+  }
+
+
+  /* @media screen and (min-width: 601px) and (max-width: 900px) {
+  .container {
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 901px) {
+  .container {
+    width: 80%;
+  }
+} */
 </style>
