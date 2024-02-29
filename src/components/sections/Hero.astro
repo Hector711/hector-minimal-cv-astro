@@ -24,9 +24,6 @@ const linkedUsername = linkedInInfo?.username
 const githubInfo = profiles.find(({ network }) => network === "GitHub")
 const githubUsername = githubInfo?.username
 
-const xInfo = profiles.find(({ network }) => network === "X")
-const xUsername = xInfo?.username
-
 ---
 
 <Section>
@@ -75,7 +72,7 @@ const xUsername = xInfo?.username
             )
           }
           {
-            profiles.map(({ network, url, username }) => {
+            profiles.map(({ network, url }) => {
               const Icon = SOCIAL_ICONS[network];
 
               return (
