@@ -1,0 +1,172 @@
+{
+  "basics": {
+    "nickname": "Héctor",
+    "name": "Héctor Luengo Guerra",
+    "label": "Full Stack Programmer",
+    "image": "https://i.ibb.co/YhTCcWd/carnet2024.jpg",
+    "email": "hectorluengo.xx@gmail.com",
+    "phone": "+34 722396259",
+    "url": "https://hector711.github.io",
+    "dni": "06020333Z",
+    "birth": "15/04/1997",
+    "summary": "Beginner developer with a deep interest in programming and a strong determination to enter the tech world. Actively seeking my first job opportunity as a programmer, with the ambition to build a solid and enduring career.",
+    "location": {
+      "address": "Calle Pizarro 24 3ºDrch",
+      "postalCode": "28004",
+      "city": "Madrid",
+      "countryCode": "ES",
+      "region": "Spain"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "@Hector711",
+        "url": "https://www.linkedin.com/in/hector711/",
+        "icon": "https://cdn3.iconfinder.com/data/icons/picons-social/57/11-linkedin-512.png"
+      },
+      {
+        "network": "GitHub",
+        "username": "@Hector711",
+        "url": "https://github.com/Hector711",
+        "icon": "https://cdn-icons-png.flaticon.com/512/25/25231.png"
+      },
+      {
+        "network": "X",
+        "username": "@vltrasensorial",
+        "url": "https://twitter.com/vltrasensorial",
+        "icon": "https://cdn2.iconfinder.com/data/icons/threads-by-instagram/24/x-logo-twitter-new-brand-512.png"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "Conde Duque Fruit Shop",
+      "position": "Self-employed",
+      "url": "https://www.google.com/maps?hl=es&gl=es&um=1&ie=UTF-8&fb=1&sa=X&ftid=0xd4229b14463e331:0xf703f76022ca0f93",
+      "startDate": "1/1/2023",
+      "endDate": "1/4/2024",
+      "summary": "In this business, along with my father, I managed all the operations of the business, administration, customer service, product design, organization, process optimization, and whatever else was needed. The tough life of the self-employed.",
+      "highlights": [
+        ""
+      ]
+    },
+    {
+      "company": "Harvey's Cocktail Bar",
+      "position": "Bartender",
+      "url": "https://www.elconfidencial.com/espana/madrid/2021-12-07/conceteles-norteamericanos-fuencarral_3336105/",
+      "startDate": "1/6/2022",
+      "endDate": "1/6/2023",
+      "summary": "I worked as a bartender in a highly prestigious place. I developed skills in mixology, tray handling, and customer service.",
+      "highlights": [
+        ""
+      ]
+    },
+    {
+      "company": "A'BARRA Restaurant",
+      "position": "Waiter",
+      "url": "https://elpais.com/elviajero/2020/01/16/actualidad/1579167119_415633.html#",
+      "startDate": "1/11/2020",
+      "endDate": "1/11/2021",
+      "summary": "I provided services in a Michelin-starred restaurant, in a high-pressure environment.",
+      "highlights": [
+        ""
+      ]
+    },
+    {
+      "company": "We Are Sales",
+      "position": "Sales Representative",
+      "url": "https://www.wearesales.es/",
+      "startDate": "1/11/2019",
+      "endDate": "1/11/2020",
+      "summary": "Here I developed my cold calling sales skills. I demonstrated the ability to establish effective relationships with potential clients and achieve sales goals in an unpredictable and challenging environment.",
+      "highlights": [
+        ""
+      ]
+    },
+    {
+      "company": "Música Creativa",
+      "position": "Sound Technician",
+      "url": "https://musicacreativa.com/",
+      "startDate": "1/5/2018",
+      "endDate": "1/10/2019",
+      "summary": "As a sound technician, I managed the setup and operation of audio equipment at live events.",
+      "highlights": [
+        ""
+      ]
+    },
+    {
+      "company": "Tako Away",
+      "position": "Store Assistant",
+      "url": "https://www.tako-away.es/",
+      "startDate": "1/11/2016",
+      "endDate": "1/10/2018",
+      "summary": "As a store assistant in a Mexican food franchise, I maintained cleanliness, order, and assisted in customer service.",
+      "highlights": [
+        ""
+      ]
+    }
+  ],
+  "education": [
+    {
+      "name": "Full Stack Web Developer",
+      "institution": "The Bridge School",
+      "endDate": "April 2024",
+      "url": "https://www.thebridge.tech"
+    },
+    {
+      "name": "Bartender",
+      "institution": "ESCOM",
+      "endDate": "June 2022",
+      "url": "https://www.escuelacocteleria.es"
+    },
+    {
+      "name": "Sound Technician",
+      "institution": "Creative Music School",
+      "endDate": "June 2021",
+      "url": "https://musicacreativa.com"
+    }
+  ],
+  "projects": [
+    {
+      "name": "NEO Social",
+      "isActive": false,
+      "year": "2024",
+      "description": "Coming soon...",
+      "highlights": [
+        "ReactJS",
+        "NextJS",
+        "Tailwind",
+        "SQL"
+      ],
+      "url": "..."
+    },
+    {
+      "name": "RACKS Wallpaper",
+      "isActive": false,
+      "year": "2024",
+      "description": "Coming soon...",
+      "description2": "With love dedicated to the Racks community: Customize your desktop and improve your productivity with this Racks-style wallpaper!",
+      "highlights": [
+        "React",
+        "NextJS",
+        "Tailwind"
+      ],
+      "url": "..."
+    }
+  ],
+  "languages": [
+    {
+      "language": "Spanish",
+      "fluency": "Native"
+    },
+    {
+      "language": "English",
+      "fluency": "C1"
+    }
+  ],
+  "extras": {
+    "specialMessage": "Perhaps you're tired of reviewing so many portfolios and resumes... That's why I've prepared a brief 1-minute video where I share everything you need to know about me. I hope you find it interesting!",
+    "videoResumeLink": ""
+
+  }
+}

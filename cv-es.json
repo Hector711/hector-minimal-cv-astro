@@ -9,7 +9,7 @@
     "url": "https://hector711.github.io",
     "dni": "06020333Z",
     "birth": "15/04/1997",
-    "summary": "Desarrollador principiante con un profundo interés en la programación y una firme determinación de ingresar al mundo tecnológico. Busco activamente mi primera oportunidad laboral como programador, con la ambición de construir una carrera sólida y gratificante en este campo en constante evolución.",
+    "summary": "Desarrollador principiante con un profundo interés en la programación y una firme determinación de ingresar al mundo tecnológico. Busco activamente mi primera oportunidad laboral como programador, con la ambición de construir una carrera sólida y duradera.",
     "location": {
       "address": "Calle Pizarro 24 3ºDrch",
       "postalCode": "28004",
@@ -20,19 +20,19 @@
     "profiles": [
       {
         "network": "LinkedIn",
-        "username": "Hector711",
+        "username": "@Hector711",
         "url": "https://www.linkedin.com/in/hector711/",
         "icon": "https://cdn3.iconfinder.com/data/icons/picons-social/57/11-linkedin-512.png"
       },
       {
         "network": "GitHub",
-        "username": "Hector711",
+        "username": "@Hector711",
         "url": "https://github.com/Hector711",
         "icon": "https://cdn-icons-png.flaticon.com/512/25/25231.png"
       },
       {
         "network": "X",
-        "username": "vltraensorial",
+        "username": "@vltrasensorial",
         "url": "https://twitter.com/vltrasensorial",
         "icon": "https://cdn2.iconfinder.com/data/icons/threads-by-instagram/24/x-logo-twitter-new-brand-512.png"
       }
@@ -40,56 +40,67 @@
   },
   "work": [
     {
-      "name": "Tako Away",
-      "position": "Auxiliar de tienda",
-      "url": "",
-      "startDate": "1/11/2016",
-      "endDate": "1/10/2018",
-      "summary": "",
+      "company": "Frutería Conde Duque",
+      "position": "Autónomo",
+      "url": "https://www.google.com/maps?hl=es&gl=es&um=1&ie=UTF-8&fb=1&sa=X&ftid=0xd4229b14463e331:0xf703f76022ca0f93",
+      "startDate": "1/1/2023",
+      "endDate": "1/4/2024",
+      "summary": "En este negocio me encargé junto con mi padre de todas las operaciones del negocio, administración, atención al cliente, diseño de productos, organizacion, optimización de procesos y lo que hicise falta. La dura vida del autómo.",
       "highlights": [
         ""
       ]
     },
     {
-      "name": "Música Creativa",
-      "position": "Técnico Sonido",
-      "url": "",
-      "startDate": "1/5/2018",
-      "endDate": "1/10/2019",
-      "summary": "",
-      "highlights": [
-        ""
-      ]
-    },
-    {
-      "name": "We Are Sales",
-      "position": "Comercial de ventas",
-      "url": "",
-      "startDate": "1/11/2019",
-      "endDate": "1/11/2020",
-      "summary": "",
-      "highlights": [
-        ""
-      ]
-    },
-    {
-      "name": "Restaurante A'BARRA",
-      "position": "Camarero",
-      "url": "",
-      "startDate": "1/11/2020",
-      "endDate": "1/11/2021",
-      "summary": "",
-      "highlights": [
-        ""
-      ]
-    },
-    {
-      "name": "Restaurante Harvey's Cockatil Bar",
+      "company": "Harvey's Cockatil Bar",
       "position": "Coctelero",
-      "url": "",
+      "url": "https://www.elconfidencial.com/espana/madrid/2021-12-07/conceteles-norteamericanos-fuencarral_3336105/",
       "startDate": "1/6/2022",
       "endDate": "1/6/2023",
-      "summary": "",
+      "summary": "Trabajé como bartender en un lugar de alto prestigio. Desarrollé habilidades en mixología, manejo de bandeja y atención al cliente.",
+      "highlights": [
+        ""
+      ]
+    },
+    {
+      "company": "Restaurante A'BARRA",
+      "position": "Camarero",
+      "url": "https://elpais.com/elviajero/2020/01/16/actualidad/1579167119_415633.html#",
+      "startDate": "1/11/2020",
+      "endDate": "1/11/2021",
+      "summary": "Presté servicios en un restaurante galardonado con una estrella Michelin, un entorno de alta exigencia y presión.",
+      "highlights": [
+        ""
+      ]
+    },
+    {
+      "company": "We Are Sales",
+      "position": "Comercial de ventas",
+      "url": "https://www.wearesales.es/",
+      "startDate": "1/11/2019",
+      "endDate": "1/11/2020",
+      "summary": "Aquí desarrollé mis habilidades de ventas a puerta fría. Demostré capacidad para establecer relaciones efectivas con clientes potenciales y alcanzar objetivos de ventas en un entorno impredecible y desafiante.",
+      "highlights": [
+        ""
+      ]
+    },
+    {
+      "company": "Música Creativa",
+      "position": "Técnico Sonido",
+      "url": "https://musicacreativa.com/",
+      "startDate": "1/5/2018",
+      "endDate": "1/10/2019",
+      "summary": "Como técnico de sonido, gestioné el montaje y la operación de equipos de audio en eventos en vivo.",
+      "highlights": [
+        ""
+      ]
+    },
+    {
+      "company": "Tako Away",
+      "position": "Auxiliar de tienda",
+      "url": "https://www.tako-away.es/",
+      "startDate": "1/11/2016",
+      "endDate": "1/10/2018",
+      "summary": "Como auxiliar de tienda en una franquicia de comida mexicana, mantuve el orden, la limpieza y asistí en el servicio al cliente..",
       "highlights": [
         ""
       ]
@@ -118,7 +129,7 @@
   "projects": [
     {
       "name": "NEO Social",
-      "isActive": true,
+      "isActive": false,
       "year": "2024",
       "description": "Proximamente...",
       "highlights": [
@@ -134,7 +145,8 @@
       "name": "RACKS Wallpaper",
       "isActive": false,
       "year": "2024",
-      "description": "Con cariño dedicado a la comunidad Racks: ¡Personaliza tu escritorio y mejora tu productividad con este wallpaper al estilo Racks!",
+      "description": "Próximamente...",
+      "description2": "Con cariño dedicado a la comunidad Racks: ¡Personaliza tu escritorio y mejora tu productividad con este wallpaper al estilo Racks!",
       "highlights": [
         "React",
         "NextJS",

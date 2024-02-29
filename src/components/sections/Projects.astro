@@ -4,7 +4,7 @@ import Section from "../Section.astro";
 import { projects } from "cv-es.json";
 ---
 
-<Section title="Projects">
+<Section title="Proyectos">
   <ul>
     {
       projects.map(({ name, url, isActive, year, highlights, description }) => {
@@ -54,7 +54,7 @@ import { projects } from "cv-es.json";
   }
 
   a:hover {
-    background: var(--light);
+    background: #f4f4f4;
     border: 1px solid var(--white);
   }
 
@@ -66,7 +66,7 @@ import { projects } from "cv-es.json";
   }
 
   a p {
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     line-height: 1.2rem;
     margin-bottom: 4px;
   }

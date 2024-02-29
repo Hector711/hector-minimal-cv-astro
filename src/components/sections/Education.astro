@@ -1,35 +1,33 @@
 ---
 import Section from "../Section.astro";
+import Arrow from "../../icons/Arrow.astro";
 
 import { education } from "cv-es.json";
-
-
- 
 ---
 
-
-
-
-<Section title="Education">
+<Section title="Formación">
   <ul>
     {
       education.map(({ name, institution, endDate, url }) => {
-
         return (
           <li>
             <article>
               <header>
+                <div>
+                  <Arrow />
+                </div>
                 <h3>
                   {name}
                   <span id="lightWeight">en</span>
-                  <a href={url} target="_blank" title={`Pagina web de ${url}`}>
+                  <a id="institution" href={url} target="_blank" title={`Pagina web de ${url}`}>
                     {" "}
                     {institution}
                   </a>
                 </h3>
-                <span>{endDate}</span>
               </header>
+              <p>{endDate}</p>
             </article>
+            
           </li>
         );
       })
@@ -38,12 +36,49 @@ import { education } from "cv-es.json";
 </Section>
 
 <style>
-  @import url('../../variables.css');
+  @import url("../../variables.css");
 
- 
+  * {
+    /* border: 0.5px solid black; */
+  }
 
-  #lightWeight { 
+  a:hover {
+  /* text-decoration: underline; */
+  color: var(--softGrey);
+  text-shadow: 2px 2px 4px var(--light);
+}
+
+  article {
+    display: flex;
+
+    justify-content: space-between;
+  }
+  header {
+    display: flex;
+  }
+  header div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 4px;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap:19px;
+  }
+
+  #lightWeight {
     font-weight: 400;
     color: var(--softGrey);
+  }
+  #institution {
+    color:var(--darkGrey);
+    font-weight: 500;
+  }
+
+  article p {
+    font-size: 0.8rem;
   }
 </style>

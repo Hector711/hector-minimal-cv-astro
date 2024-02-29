@@ -1,71 +1,101 @@
 ---
 import Section from "../Section.astro";
+import Arrow from "../../icons/Arrow.astro";
 
 import { work } from "cv-es.json";
 ---
 
-<Section title="Experience">
+<Section title="Experiencia Laboral">
   <ul>
     {
-      work.map(
-        ({ name, startDate, endDate, position, summary }) => {
-          const startYear = new Date(startDate).getFullYear();
-          const endYear =
-            endDate != null ? new Date(endDate).getFullYear() : "Actual";
-          const years = `${startYear} - ${endYear}`;
+      work.map(({ company, startDate, endDate, position, url, summary }) => {
+        const startYear = new Date(startDate).getFullYear();
+        const endYear =
+          endDate != null ? new Date(endDate).getFullYear() : "Actual";
+        const years = `${startYear} - ${endYear}`;
 
-          return (
-            <li>
-              <article>
+        return (
+          <li>
+            <article>
+              <div>
                 <header>
                   <div>
-                    <h3>{name}</h3>
-                    <h4>{position}</h4>
+                    <Arrow />
                   </div>
-                  <time>{years}</time>
+                  <h3>
+                    {position}
+                    <span id="lightWeight">en</span>
+                    <a href={url} target="_blank" id="company">
+                      {company}
+                    </a>
+                  </h3>
                 </header>
-                <footer>
-                  <p>{summary}</p>
-                </footer>
-              </article>
-            </li>
-          );
-        }
-      )
+                <p>{summary}</p>
+              </div>
+              <time>{years}</time>
+            </article>
+          </li>
+        );
+      })
     }
   </ul>
 </Section>
 
-
 <style>
-  @import url('../../variables.css');
+  @import url("../../variables.css");
 
   * {
-    /* border: 1px solid black; */
+    /* border: 0.5px solid black; */
   }
+
+  a:hover {
+    /* text-decoration: underline; */
+    color: var(--softGrey);
+    text-shadow: 2px 2px 4px var(--light);
+  }
+
+  article {
+    display: flex;
+
+    justify-content: space-between;
+  }
+  header {
+    display: flex;
+  }
+  header div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 4px;
+  }
+
   ul {
     display: flex;
     flex-direction: column;
-    margin-bottom: 32px;
+    gap: 22px;
   }
-  article h3{
+
+  #lightWeight {
+    font-weight: 400;
+    color: var(--softGrey);
+  }
+  #company {
+    color: var(--darkGrey);
     font-weight: 500;
   }
 
-  article h4 {
-    font-weight: 400;
+  article p {
+    margin-left: 19px;
+    width: 550px;
+    font-size: 0.8rem;
+    line-height: 1.3rem;
+    margin-top: 5px
   }
 
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-bottom: 4px;
-  }
+  
 
-  time { 
+  article time {
     color: var(--softGrey);
     font-size: 0.85rem;
   }
-
 </style>

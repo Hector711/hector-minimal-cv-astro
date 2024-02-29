@@ -6,10 +6,9 @@ import Phone from "../../icons/Phone.astro";
 import X from "../../icons/X.astro";
 import GitHub from "../../icons/GitHub.astro";
 import LinkedIn from "../../icons/LinkedIn.astro";
+import LocationIcon from "../../icons/LocationIcon.astro";
 
-import WorldMap from "../../icons/WorldMap.astro";
-
-const { name, label, image, location, profiles, phone, email } = basics;
+const { name, label, image, location, profiles, phone, email, nickname } = basics;
 const { city, region } = location;
 
 const SOCIAL_ICONS: Record<string, any> = {
@@ -18,10 +17,16 @@ const SOCIAL_ICONS: Record<string, any> = {
   X,
 };
 
-const linkedInfo = profiles.find(({ network }) => network === "LinkedIn");
-const linkedUrl = linkedInfo?.url;
 
-const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ");
+const linkedInInfo = profiles.find(({ network }) => network === "LinkedIn")
+const linkedUsername = linkedInInfo?.username
+
+const githubInfo = profiles.find(({ network }) => network === "GitHub")
+const githubUsername = githubInfo?.username
+
+const xInfo = profiles.find(({ network }) => network === "X")
+const xUsername = xInfo?.username
+
 ---
 
 <Section>
@@ -30,13 +35,18 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ");
       <h1>{name}</h1>
       <h2>{label}</h2>
       <span>
-        <WorldMap />
-        {city}, {region}
+        <div>
+          <LocationIcon />
+        </div>
+        <div>
+          {city}, {region}
+        </div>
       </span>
       <footer id="print">
-
-        <!-- QR DE CONTACTO -->
-        {printInfo}
+        <p>Email: {basics.email}</>
+        <p>Telef.: {basics.phone}</p>
+        <p>LinkedIn: {linkedUsername}</p>
+        <p>GitHub: {githubUsername}</p>
       </footer>
       <footer id="no-print">
         <div id="profiles">
@@ -44,7 +54,7 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ");
             email && (
               <a
                 href={`mailto:${email}`}
-                title={`Enviar un correo electrónico a ${name} al correo ${email}`}
+                title={`Enviar un correo electrónico a ${nickname} al correo ${email}`}
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -56,7 +66,7 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ");
             phone && (
               <a
                 href={`tel:${phone}`}
-                title={`Llamar por teléfono ${name} al número ${phone}`}
+                title={`Llamar por teléfono a ${nickname} al número ${phone}`}
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -71,7 +81,7 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ");
               return (
                 <a
                   href={url}
-                  title={`Visitar el perfil de ${name} en ${network}`}
+                  title={`Visitar el perfil de ${nickname} en ${network}`}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -81,7 +91,7 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ");
             })
           }
         </div>
-        <a id="webPage" target="_blank" href={basics.url}>
+        <a id="webPage" target="_blank" title=`Visitar la pagina web de ${nickname}` href={basics.url}>
           <p>Official Web Page</p>
         </a>
       </footer>
@@ -97,7 +107,7 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ");
   @import url("../../variables.css");
 
   * {
-    /* border: 1px solid black; */
+    /* border: 0.5px solid black; */
   }
   .container {
     display: flex;
@@ -105,6 +115,13 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ");
     align-items: center;
     justify-content: space-between;
     gap: 1rem;
+  }
+
+  #print {
+    width: fit-content;
+  }
+  #print p {
+    font-size: 0.8rem;
   }
 
   .info {
@@ -115,6 +132,7 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ");
 
   h1 {
     font-size: 2.2rem;
+    font-weight: 800;
   }
 
   h2 {
@@ -136,8 +154,9 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ");
     display: flex;
     align-items: center;
     gap: 0.25rem;
-    font-size: 0.85rem;
-    letter-spacing: -0.05rem;
+    font-size: 1rem;
+    letter-spacing: -0.01rem;
+    /* height: 19px; */
   }
 
   footer {
