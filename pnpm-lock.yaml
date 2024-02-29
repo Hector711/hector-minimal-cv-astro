@@ -8,6 +8,9 @@ dependencies:
   '@astrojs/check':
     specifier: ^0.4.1
     version: 0.4.1(typescript@5.3.3)
+  '@fontsource-variable/onest':
+    specifier: ^5.0.2
+    version: 5.0.2
   ninja-keys:
     specifier: ^1.2.2
     version: 1.2.2
@@ -585,6 +588,10 @@ packages:
     requiresBuild: true
     dev: true
     optional: true
+
+  /@fontsource-variable/onest@5.0.2:
+    resolution: {integrity: sha512-XsH6q+/OyO0Oba4OB/NkiQu3ON93U2Kx+1YxKpNZMuS+a+WvxipwhO8Und2CC0mLI33xOZzTWUk4wtnsUJzjCQ==}
+    dev: false
 
   /@jridgewell/gen-mapping@0.3.4:
     resolution: {integrity: sha512-Oud2QPM5dHviZNn4y/WhhYKSXksv+1xLEIsNrAbGcFzUN3ubqWRFT5gwPchNc5NuzILOU4tPBDTZ4VwhL8Y7cw==}

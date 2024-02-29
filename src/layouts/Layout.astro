@@ -1,4 +1,6 @@
 ---
+// Supports weights 100-900
+import '@fontsource-variable/onest';
 interface Props {
   title: string;
 }
@@ -31,6 +33,7 @@ const { title } = Astro.props;
   
   html {
     font-family:
+      'Onest Variable',
       BlinkMacSystemFont,
       "Segoe UI",
       Roboto,
@@ -44,6 +47,7 @@ const { title } = Astro.props;
     background-color: var(--softWhite);
     letter-spacing: -0.0005rem;
   }
+
 
   main {
     padding: 4rem;
@@ -83,6 +87,7 @@ const { title } = Astro.props;
   h4 {
     margin: 0;
     font-family:
+    'Onest Variable',
       system-ui,
       -apple-system,
       BlinkMacSystemFont,
