@@ -1,9 +1,7 @@
 {
   "extends": "astro/tsconfigs/strict",
-  // para que al poner @/* se refiera a source "src"
-  // nos facilita un monton de donde vienen los componentes 
   "compilerOptions": {
-    "baseUrl": ".",
+    "baseUrl": "/Users/hectorio/Desktop/PROYECTOS/hector-minimalist-cv",
     "paths": {
       "@cv": [
         "./cv.json"
@@ -11,6 +9,8 @@
       "@/*": [
         "src/*"
       ]
-    }
+    },
+    "jsx": "react-jsx",
+    "jsxImportSource": "react"
   }
 }

@@ -18,7 +18,7 @@ const { title } = Astro.props;
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
-  <body>
+  <body> 
     <slot />
   </body>
 </html>
@@ -74,7 +74,6 @@ const { title } = Astro.props;
   h4 {
     margin: 0;
     font-family:
-      "Onest Variable",
       system-ui,
       -apple-system,
       BlinkMacSystemFont,
@@ -116,7 +115,7 @@ const { title } = Astro.props;
   }
 
   #arrow {
-    color:  var(--black);
+    color: var(--black);
   }
 
   @media print {
@@ -148,9 +147,7 @@ const { title } = Astro.props;
       align-items: start;
       padding-top: 4px;
     }
-
   }
-
 
   /* @media screen and (min-width: 601px) and (max-width: 900px) {
   .container {

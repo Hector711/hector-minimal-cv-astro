@@ -38,6 +38,36 @@
       }
     ]
   },
+  "technologies": {
+    "main":[
+      {
+        "name": "ReactJS",
+        "icon": "..."
+      },
+      {
+        "name": "NextJS",
+        "icon": "..."
+      },
+      {
+        "name": "Astro",
+        "icon": "..."
+      }
+    ],
+    "auxiliary": [
+      {
+        "name": "HTML",
+        "icon": "..."
+      },
+      {
+        "name": "JavaScript",
+        "icon": "..."
+      },
+      {
+        "name": "CSS",
+        "icon": "..."
+      }
+    ]
+  },
   "work": [
     {
       "company": "Frutería Conde Duque",
