@@ -1,0 +1,47 @@
+---
+import Download from "../../icons/Download.astro"
+---
+<div id="options">
+  <a id="download">
+    
+    <p><Download /> Descarga</p>
+  </a>
+  <div id="switches">
+    <p>Dark Mode</p>
+    <p>Language</p>
+  </div>
+</div>
+
+<style>
+    @import url("../../variables.css");
+
+  * {
+    /* border: 1px solid black; */
+  }
+  #options {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    width: 700px;
+    margin-top: 0;
+    margin-inline: auto;
+    padding-block: 1rem;
+  }
+
+  #switches {
+    display: flex;
+    gap: 1rem;
+
+  }
+
+  p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: 0.7px solid var(--softGrey);
+    padding: 5px 10px;
+    border-radius: 8px;
+  }
+</style>

@@ -1,6 +1,7 @@
 ---
 // Supports weights 100-900
 import "@fontsource-variable/onest";
+import Options from "../components/sections/Options.astro";
 interface Props {
   title: string;
 }
@@ -19,6 +20,7 @@ const { title } = Astro.props;
     <title>{title}</title>
   </head>
   <body> 
+    <Options />
     <slot />
   </body>
 </html>
@@ -28,7 +30,6 @@ const { title } = Astro.props;
   @import url("../variables.css");
 
   * {
-    /* border: 0.5px solid black; */
   }
 
   html {
