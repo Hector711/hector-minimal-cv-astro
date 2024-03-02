@@ -4,17 +4,17 @@ import Sun from "../../icons/Sun.astro";
 import Moon from "../../icons/Moon.astro";
 ---
 
-<div id="options">
-  <a id="download"><Download /> Descarga</a>
+<div id="optContainer">
+  <a href="./" title="Descarga el CV completo" id="download"><Download /> Descarga</a>
 
   <div id="switches">
-    <a href="">
+    <a href="./" title="Modo Oscuro">
       <Sun />
       Dark Mode
       <Moon />
     </a>
 
-    <a href="">Language</a>
+    <a href="./" title="Cambia el idioma" >Language</a>
   </div>
 </div>
 
@@ -22,9 +22,9 @@ import Moon from "../../icons/Moon.astro";
   @import url("../../variables.css");
 
   * {
-    border: 1px solid black;
+    /* border: 1px solid black; */
   }
-  #options {
+  #optContainer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -32,13 +32,14 @@ import Moon from "../../icons/Moon.astro";
     width: 700px;
     margin-top: 0;
     margin-inline: auto;
-    padding-block: 1rem;
+    /* padding-block: 0.5rem; */
+    padding: 1rem 0 0;
     transition: all 0.3s ease;
   }
 
   #switches {
     display: flex;
-    gap: 1rem;
+    gap: 2rem;
   }
 
   a {
@@ -51,9 +52,10 @@ import Moon from "../../icons/Moon.astro";
     height: 40px;
     border-radius: 6px;
     transition: all 0.3s ease;
+    width: 140px;
   }
 
-  footer a:hover {
+  a:hover {
     background: var(--light);
     border: 2px solid var(--softWhite);
   }
