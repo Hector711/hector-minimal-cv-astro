@@ -5,10 +5,13 @@ import { basics } from "../../../cv-es.json";
 
 const { summary } = basics;
 
-import { useTranslations } from "../i18n/utils.ts";
+import { getLangFromUrl, useTranslations } from "../../i18n/utils.ts";
+const { currentLocale } = Astro
+
+const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 ---
 
-<Section title="Sobre Mi">
+<Section title={ t("section.about")}>
   <p>{summary}</p>
 </Section>

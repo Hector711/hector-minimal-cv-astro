@@ -1,10 +1,15 @@
 ---
 import Section from "../Section.astro";
 
+import { getLangFromUrl, useTranslations } from "../../i18n/utils.ts";
+const { currentLocale } = Astro
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
 import { languages } from "../../../cv-es.json";
 ---
 
-<Section title="Idiomas">
+<Section title={t("section.languages")}>
   <ul>
     {
       languages.map(({ language, fluency }) => {

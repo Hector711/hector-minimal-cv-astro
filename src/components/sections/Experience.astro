@@ -2,10 +2,15 @@
 import Section from "../Section.astro";
 import Arrow from "../../icons/Arrow.astro";
 
+import { getLangFromUrl, useTranslations } from "../../i18n/utils.ts";
+const { currentLocale } = Astro
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
 import { work } from "../../../cv-es.json";
 ---
 
-<Section title="Experiencia Laboral">
+<Section title={t("section.experience")}>
   <ul>
     {
       work.map(({ company, startDate, endDate, position, url, summary }) => {

@@ -9,6 +9,11 @@ import LinkedIn from "../../icons/LinkedIn.astro";
 import LocationIcon from "../../icons/LocationIcon.astro";
 import { Image } from "astro:assets";
 
+import { getLangFromUrl, useTranslations } from "../../i18n/utils.ts";
+const { currentLocale } = Astro
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
 const { name, label, image, location, profiles, phone, email, nickname } =
   basics;
 const { city, region } = location;
