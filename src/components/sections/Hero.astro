@@ -7,6 +7,7 @@ import X from "../../icons/X.astro";
 import GitHub from "../../icons/GitHub.astro";
 import LinkedIn from "../../icons/LinkedIn.astro";
 import LocationIcon from "../../icons/LocationIcon.astro";
+import { Image } from "astro:assets";
 
 const { name, label, image, location, profiles, phone, email, nickname } =
   basics;
@@ -93,12 +94,15 @@ const githubUsername = githubInfo?.username;
           title=`Visitar la pagina web de ${nickname}`
           href={basics.url}
         >
-          <p>Pagina Web Oficial</p>
+          <p>Página Web Oficial</p>
         </a>
       </footer>
     </div>
     <figure>
-      <img src={image} alt={name} />
+      
+      <Image id="img" src={image} width="140" height="140" alt={name} />
+
+      <!-- <img src={image} alt={name} /> -->
     </figure>
   </div>
 </Section>
@@ -143,10 +147,9 @@ const githubUsername = githubInfo?.username;
     text-wrap: balance;
   }
 
-  img {
-    aspect-ratio: 1/1;
+  #img {
+    /* aspect-ratio: 1/1; */
     object-fit: cover;
-    width: 140px;
     border-radius: 25px;
   }
 
