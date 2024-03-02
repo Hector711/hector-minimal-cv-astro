@@ -1,5 +1,5 @@
 ---
-import { basics } from "../../../cv-es.json";
+// import { basics } from "../../../cv-es.json";
 import Section from "../Section.astro";
 import Mail from "../../icons/Mail.astro";
 import Phone from "../../icons/Phone.astro";
@@ -13,6 +13,10 @@ import { getLangFromUrl, useTranslations } from "../../i18n/utils.ts";
 const { currentLocale } = Astro
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
+import { getI18N } from "../../i18n/index"
+const i18n = getI18N({ currentLocale })
+const basics = i18n.basics
+
 
 const { name, label, image, location, profiles, phone, email, nickname } =
   basics;
@@ -99,7 +103,7 @@ const githubUsername = githubInfo?.username;
           title=`Visitar la pagina web de ${nickname}`
           href={basics.url}
         >
-          <p>Página Web Oficial</p>
+          <p>{t("hero.webPage")}</p>
         </a>
       </footer>
     </div>

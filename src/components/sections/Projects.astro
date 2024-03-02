@@ -6,7 +6,10 @@ const { currentLocale } = Astro
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 
-import { projects } from "../../../cv-es.json";
+
+import { getI18N } from "../../i18n/index"
+const i18n = getI18N({ currentLocale })
+const projects = i18n.projects
 ---
 
 <Section title={t("section.projects")}>

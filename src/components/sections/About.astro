@@ -1,17 +1,16 @@
 ---
 import Section from "../Section.astro";
 
-import { basics } from "../../../cv-es.json";
-
-const { summary } = basics;
-
+import { getI18N } from "../../i18n/index"
 import { getLangFromUrl, useTranslations } from "../../i18n/utils.ts";
 const { currentLocale } = Astro
-
+const i18n = getI18N({ currentLocale })
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
+const summary = i18n.basics.summary
 ---
 
 <Section title={ t("section.about")}>
   <p>{summary}</p>
+
 </Section>

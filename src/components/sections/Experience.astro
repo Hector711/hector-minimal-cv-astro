@@ -7,9 +7,11 @@ const { currentLocale } = Astro
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 
-import { work } from "../../../cv-es.json";
+import { getI18N } from "../../i18n/index"
+const i18n = getI18N({ currentLocale })
+const work = i18n.work
 ---
-
+<br id="print">
 <Section title={t("section.experience")}>
   <ul>
     {
@@ -29,7 +31,7 @@ import { work } from "../../../cv-es.json";
                   </div>
                   <h3>
                     {position}
-                    <span id="lightWeight">en</span>
+                    <span id="lightWeight">{t("at")}</span>
                     <a href={url} target="_blank" id="company">
                       {company}
                     </a>
@@ -115,6 +117,11 @@ import { work } from "../../../cv-es.json";
       justify-content: center;
       align-items: start;
       text-align: right;
+    }
+  }
+  @media print {
+    #print {
+      page-break-before: always;
     }
   }
 </style>

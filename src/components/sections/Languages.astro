@@ -5,10 +5,13 @@ import { getLangFromUrl, useTranslations } from "../../i18n/utils.ts";
 const { currentLocale } = Astro
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
+import { getI18N } from "../../i18n/index"
+const i18n = getI18N({ currentLocale })
 
-import { languages } from "../../../cv-es.json";
+const languages = i18n.languages
 ---
-
+<div id="print">
+</div>
 <Section title={t("section.languages")}>
   <ul>
     {
@@ -39,6 +42,7 @@ import { languages } from "../../../cv-es.json";
     justify-content: start;
     flex-wrap: wrap;
     gap: 1rem;
+    
   }
 
   li {
@@ -66,4 +70,10 @@ import { languages } from "../../../cv-es.json";
     padding-bottom: 0;
     bottom: 0;
   }
+
+  /* @media print {
+    #print {
+      page-break-before: always;
+    }
+  } */
 </style>

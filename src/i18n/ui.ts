@@ -13,6 +13,8 @@ export const ui = {
     'section.languages': 'Idioma',
     'section.options': 'Opciones',
     'section.projects': 'Proyectos',
+    'hero.webPage': 'Página Web Official',
+    'at': 'en'
     
   },
   en: {
@@ -22,5 +24,7 @@ export const ui = {
     'section.languages': 'Languages',
     'section.options': 'Options',
     'section.projects': 'Projects',
+    'hero.webPage': 'Official Web Page',
+    'at': 'at'
   },
 } as const;
