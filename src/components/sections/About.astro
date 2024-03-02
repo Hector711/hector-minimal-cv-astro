@@ -1,15 +1,14 @@
 ---
-import Section from "../Section.astro"
+import Section from "../Section.astro";
 
-
-import { basics } from "../../../cv-es.json"
+import { basics } from "../../../cv-es.json";
 
 const { summary } = basics;
 
+import { useTranslations } from "../i18n/utils.ts";
+const t = useTranslations(lang);
 ---
 
 <Section title="Sobre Mi">
-
   <p>{summary}</p>
-
 </Section>

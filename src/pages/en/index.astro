@@ -1,0 +1,31 @@
+---
+// import Layout from '@/layouts/Layout.astro';
+import Layout from "../../layouts/Layout.astro";
+
+import About from "../../components/sections/About.astro";
+import Education from "../../components/sections/Education.astro";
+import Experience from "../../components/sections/Experience.astro";
+import Hero from "../../components/sections/Hero.astro";
+import Projects from "../../components/sections/Projects.astro";
+import Languages from "../../components/sections/Languages.astro";
+import KeyboardManager from "../../components/KeyboardManager.astro";
+import { basics } from "../../../cv-es.json";
+const { nickname } = basics;
+
+---
+
+<Layout title=`${nickname} Minimalist Portfolio`>
+  <main>
+    <Hero />
+    <About />
+    <Projects />
+    <Education />
+    <Languages />
+    <Experience />
+    <!-- <Languages /> -->
+  </main>
+
+  <KeyboardManager />
+</Layout>
+
+
