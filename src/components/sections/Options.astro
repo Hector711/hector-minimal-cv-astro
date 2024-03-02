@@ -1,22 +1,28 @@
 ---
-import Download from "../../icons/Download.astro"
+import Download from "../../icons/Download.astro";
+import Sun from "../../icons/Sun.astro";
+import Moon from "../../icons/Moon.astro";
 ---
+
 <div id="options">
-  <a id="download">
-    
-    <p><Download /> Descarga</p>
-  </a>
+  <a id="download"><Download /> Descarga</a>
+
   <div id="switches">
-    <p>Dark Mode</p>
-    <p>Language</p>
+    <a href="">
+      <Sun />
+      Dark Mode
+      <Moon />
+    </a>
+
+    <a href="">Language</a>
   </div>
 </div>
 
 <style>
-    @import url("../../variables.css");
+  @import url("../../variables.css");
 
   * {
-    /* border: 1px solid black; */
+    border: 1px solid black;
   }
   #options {
     display: flex;
@@ -27,21 +33,28 @@ import Download from "../../icons/Download.astro"
     margin-top: 0;
     margin-inline: auto;
     padding-block: 1rem;
+    transition: all 0.3s ease;
   }
 
   #switches {
     display: flex;
     gap: 1rem;
-
   }
 
-  p{
+  a {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
-    border: 0.7px solid var(--softGrey);
-    padding: 5px 10px;
-    border-radius: 8px;
+    border: 1px solid var(--softGrey);
+    padding: 0 10px;
+    height: 40px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+  }
+
+  footer a:hover {
+    background: var(--light);
+    border: 2px solid var(--softWhite);
   }
 </style>
