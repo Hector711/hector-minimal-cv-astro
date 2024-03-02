@@ -11,5 +11,10 @@ export default defineConfig({
   routing: {
     prefixDefaultLocale: false,
   },
+  fallback: {
+    fr: "es"
+  },
   integrations: [react()],
 });
+
+
