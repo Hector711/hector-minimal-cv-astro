@@ -4,7 +4,7 @@
     "baseUrl": "/Users/hectorio/Desktop/PROYECTOS/hector-minimalist-cv",
     "paths": {
       "@cv": [
-        "./cv.json"
+        "./cv-es.json"
       ],
       "@/*": [
         "src/*"
