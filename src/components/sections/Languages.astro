@@ -10,12 +10,10 @@ import { languages } from "../../../cv-es.json";
       languages.map(({ language, fluency }) => {
         return (
           <li>
-                <header>
-                  <h3>
-                    {language}
-                  </h3>
-                  <p>{fluency}</p>
-                </header>
+            <header>
+              <h3>{language}</h3>
+              <p>{fluency}</p>
+            </header>
           </li>
         );
       })
@@ -27,18 +25,20 @@ import { languages } from "../../../cv-es.json";
   @import url("../../variables.css");
 
   * {
-    border: 1px solid black;
+    /* border: 1px solid black; */
   }
 
   ul {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: start;
+    flex-wrap: wrap;
     gap: 1rem;
   }
-  
+
   li {
-    width:100%;
+    flex: 1 0 calc(50% - 1rem);
+    max-width: 50%;
   }
 
   header {
@@ -49,20 +49,16 @@ import { languages } from "../../../cv-es.json";
     flex-direction: row;
     padding: 16px;
     height: 100%;
-    margin: 2px;
-    transition: background 0.3s ease, border 0.3s ease;
-  
+    margin: 0px;
   }
-
-  
 
   p {
     display: flex;
     justify-content: center;
-    align-items: center;
-    font-size: 0.75rem;
+    align-items: end;
+    font-size: 1rem;
     line-height: 1.2rem;
+    padding-bottom: 0;
+    bottom: 0;
   }
-
-  
 </style>
