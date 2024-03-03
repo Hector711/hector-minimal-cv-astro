@@ -16,7 +16,8 @@ export const ui = {
     'hero.webPage': 'Página Web Official',
     'at': 'en',
     'download': 'Descargar',
-    'searcher': 'Buscador'
+    'searcher': 'Buscador',
+    'language': 'Language'
     
   },
   en: {
@@ -29,7 +30,8 @@ export const ui = {
     'hero.webPage': 'Official Web Page',
     'at': 'at',
     'download': 'Download',
-    'searcher': 'Searcher'
+    'searcher': 'Searcher',
+    'language': 'Idioma'
 
   },
 } as const;

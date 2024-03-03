@@ -29,7 +29,7 @@ const translatePath = useTranslatedPath(lang)
 {
   Object.entries(languages).map(([langPrexif, label]) => {
     if(langPrexif == lang)  return <></>
-    return (<a id="flags" href={translatePath('/', langPrexif)}><SpainFlag />Language<AmericaFlag /></a>)
+    return (<a id="flags" href={translatePath('/', langPrexif)}><SpainFlag />{label}<AmericaFlag /></a>)
   })
 }
 
