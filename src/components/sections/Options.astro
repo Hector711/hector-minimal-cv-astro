@@ -2,7 +2,8 @@
 import Download from "../../icons/Download.astro";
 import Sun from "../../icons/Sun.astro";
 import Moon from "../../icons/Moon.astro";
-import LanguagePicker from "../LanguagePicker.astro"
+import Search from "../../icons/Search.astro";
+import SpainFlag from "../../icons/SpainFlag.astro";
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
@@ -13,21 +14,33 @@ const translatePath = useTranslatedPath(lang)
 
 
 <div id="optContainer">
-  <a href="./" id="hidde" title="Descarga el CV completo" id="download"><Download /> Descarga</a>
+  <div id="left">
 
-  <div id="switches">
+    <a href="./" id="hidde" title="Descarga el CV completo" id="download"><Download /> {t("download")}</a>
+    <a href="./" id="hidde" title="Descarga el CV completo" id="download"><Search /> {t("searcher")}</a>
+    
+  </div>
+  <div id="right">
     <a href="./" id="hidden" title="Modo Oscuro">
       <Sun />
       Dark Mode
       <Moon />
     </a>
-    <!-- <LanguagePicker /> -->
 {
   Object.entries(languages).map(([langPrexif, label]) => {
-    if(langPrexif == lang)  return <></>
+    // if(langPrexif == lang)  return <></>
+    return (<a href={translatePath('/', langPrexif)}> <SpainFlag />{label}</a>)
     return (<a href={translatePath('/', langPrexif)}>{label}</a>)
   })
 }
+
+<ul>
+  {Object.entries(languages).map(([lang, label]) => (
+    <li>
+      <a href={translatePath('/', lang)}>{label}</a>
+    </li>
+  ))}
+</ul>
   </div>
 </div>
 
@@ -41,7 +54,7 @@ const translatePath = useTranslatedPath(lang)
   }
 
   #hidden {
-    display: none;
+    /* display: none; */
   }
   #optContainer {
     display: flex;
@@ -56,7 +69,11 @@ const translatePath = useTranslatedPath(lang)
     transition: all 0.3s ease;
   }
 
-  #switches {
+  #left {
+    display: flex;
+    gap: 2rem;
+  }
+  #right {
     display: flex;
     gap: 2rem;
   }
@@ -73,6 +90,7 @@ const translatePath = useTranslatedPath(lang)
     transition: all 0.3s ease;
     width: 120px;
     font-size: 0.8rem;
+    color: var(--softGrey)
   }
 
   a:hover {

@@ -14,7 +14,9 @@ export const ui = {
     'section.options': 'Opciones',
     'section.projects': 'Proyectos',
     'hero.webPage': 'Página Web Official',
-    'at': 'en'
+    'at': 'en',
+    'download': 'Descargar',
+    'searcher': 'Buscador'
     
   },
   en: {
@@ -25,6 +27,9 @@ export const ui = {
     'section.options': 'Options',
     'section.projects': 'Projects',
     'hero.webPage': 'Official Web Page',
-    'at': 'at'
+    'at': 'at',
+    'download': 'Download',
+    'searcher': 'Searcher'
+
   },
 } as const;

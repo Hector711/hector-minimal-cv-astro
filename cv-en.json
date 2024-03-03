@@ -148,13 +148,13 @@
   ],
   "projects": [
     {
-      "name": "NEO Social",
+      "name": "Minimal CV Maker",
       "isActive": false,
       "year": "2024",
       "description": "Coming soon...",
       "highlights": [
         "ReactJS",
-        "NextJS",
+        "Astro",
         "Tailwind",
         "SQL"
       ],
