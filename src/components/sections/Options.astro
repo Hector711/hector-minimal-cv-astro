@@ -4,6 +4,7 @@ import Sun from "../../icons/Sun.astro";
 import Moon from "../../icons/Moon.astro";
 import Search from "../../icons/Search.astro";
 import SpainFlag from "../../icons/SpainFlag.astro";
+import AmericaFlag from "../../icons/AmericaFlag.astro";
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
@@ -23,24 +24,22 @@ const translatePath = useTranslatedPath(lang)
   <div id="right">
     <a href="./" id="hidden" title="Modo Oscuro">
       <Sun />
-      Dark Mode
       <Moon />
     </a>
 {
   Object.entries(languages).map(([langPrexif, label]) => {
-    // if(langPrexif == lang)  return <></>
-    return (<a href={translatePath('/', langPrexif)}> <SpainFlag />{label}</a>)
-    return (<a href={translatePath('/', langPrexif)}>{label}</a>)
+    if(langPrexif == lang)  return <></>
+    return (<a id="flags" href={translatePath('/', langPrexif)}><SpainFlag />Language<AmericaFlag /></a>)
   })
 }
 
-<ul>
+<!-- <ul>
   {Object.entries(languages).map(([lang, label]) => (
     <li>
       <a href={translatePath('/', lang)}>{label}</a>
     </li>
   ))}
-</ul>
+</ul> -->
   </div>
 </div>
 
@@ -68,6 +67,13 @@ const translatePath = useTranslatedPath(lang)
     padding: 1rem 0 0;
     transition: all 0.3s ease;
   }
+
+  #flags {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
 
   #left {
     display: flex;
