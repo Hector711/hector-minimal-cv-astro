@@ -15,21 +15,13 @@ const translatePath = useTranslatedPath(lang)
 
 
 <div id="optContainer">
-  
+  <div>
 {
   Object.entries(languages).map(([langPrexif, label]) => {
     if(langPrexif == lang)  return <></>
     return (<a id="flags" href={translatePath('/', langPrexif)}><SpainFlag />{label}<AmericaFlag /></a>)
   })
 }
-
-<!-- <ul>
-  {Object.entries(languages).map(([lang, label]) => (
-    <li>
-      <a href={translatePath('/', lang)}>{label}</a>
-    </li>
-  ))}
-</ul> -->
   </div>
 </div>
 
