@@ -18,7 +18,7 @@ const translatePath = useTranslatedPath(lang)
   <!-- <div> -->
     <div id="left">  
       <!-- Boton Download -->
-      <a href="./" id="hidden" title="Descarga el CV completo" id="download"><Download /> {t("download")}</a>
+      <a href="./" title="Descarga el CV completo" id="download"><Download /> {t("download")}</a>
       <!-- Boton Comandos -->
       <!-- <a href="./" id="hidden" title="Comandos" id="download"><Search /> {t("comands")}</a> -->
     </div>
@@ -55,11 +55,12 @@ const translatePath = useTranslatedPath(lang)
     display: flex;
     flex-direction: row;
     justify-content: center;
+    /* para separar download y languages */
+    gap: 4rem;
 
     width: 700px;
     margin-top: 5px;
     margin-inline: auto;
-    /* padding-block: 0.5rem; */
     padding: 1rem 0 0;
     transition: all 0.3s ease;
   }
