@@ -17,8 +17,8 @@ const translatePath = useTranslatedPath(lang)
 <div id="optContainer">
   <div id="left">
 
-    <a href="./" id="hidde" title="Descarga el CV completo" id="download"><Download /> {t("download")}</a>
-    <a href="./" id="hidde" title="Descarga el CV completo" id="download"><Search /> {t("searcher")}</a>
+    <a href="./" id="hidden" title="Descarga el CV completo" id="download"><Download /> {t("download")}</a>
+    <a href="./" id="hidden" title="Descarga el CV completo" id="download"><Search /> {t("searcher")}</a>
     
   </div>
   <div id="right">
@@ -53,7 +53,7 @@ const translatePath = useTranslatedPath(lang)
   }
 
   #hidden {
-    /* display: none; */
+    display: none;
   }
   #optContainer {
     display: flex;
