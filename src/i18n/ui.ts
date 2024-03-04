@@ -10,7 +10,7 @@ export const ui = {
     'section.about': 'Sobre mi',
     'section.education': 'Formación',
     'section.experience': 'Experiencia Laboral',
-    'section.languages': 'Idioma',
+    'section.languages': 'Idiomas',
     'section.options': 'Opciones',
     'section.projects': 'Proyectos',
     'hero.webPage': 'Página Web Official',
