@@ -16,7 +16,7 @@ export const ui = {
     'hero.webPage': 'Página Web Official',
     'at': 'en',
     'download': 'Descargar',
-    'searcher': 'Buscador',
+    'comands': 'Comandos',
     'language': 'Language'
     
   },
@@ -30,7 +30,7 @@ export const ui = {
     'hero.webPage': 'Official Web Page',
     'at': 'at',
     'download': 'Download',
-    'searcher': 'Searcher',
+    'comands': 'Comands',
     'language': 'Idioma'
 
   },

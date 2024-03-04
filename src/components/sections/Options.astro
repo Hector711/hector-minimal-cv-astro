@@ -15,17 +15,7 @@ const translatePath = useTranslatedPath(lang)
 
 
 <div id="optContainer">
-  <div id="left">
-
-    <a href="./" id="hidden" title="Descarga el CV completo" id="download"><Download /> {t("download")}</a>
-    <a href="./" id="hidden" title="Descarga el CV completo" id="download"><Search /> {t("searcher")}</a>
-    
-  </div>
-  <div id="right">
-    <a href="./" id="hidden" title="Modo Oscuro">
-      <Sun />
-      <Moon />
-    </a>
+  
 {
   Object.entries(languages).map(([langPrexif, label]) => {
     if(langPrexif == lang)  return <></>
@@ -58,7 +48,7 @@ const translatePath = useTranslatedPath(lang)
   #optContainer {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
 
     width: 700px;
     margin-top: 5px;
