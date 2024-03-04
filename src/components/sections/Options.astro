@@ -16,16 +16,20 @@ const translatePath = useTranslatedPath(lang)
 
 <div id="optContainer">
   <!-- <div> -->
-
-    <!-- Boton Download -->
-    
-    
-    <!-- Boton Comandos -->
+    <div id="left">  
+      <!-- Boton Download -->
+      <a href="./" id="hidden" title="Descarga el CV completo" id="download"><Download /> {t("download")}</a>
+      <!-- Boton Comandos -->
+      <!-- <a href="./" id="hidden" title="Comandos" id="download"><Search /> {t("comands")}</a> -->
+    </div>
     
   <!-- </div> -->
-  <div>
+  <div id="right">
     <!-- boton Dark Mode -->
-
+    <!-- <a href="./" id="hidden" title="Modo Oscuro">
+      <Sun />
+      <Moon />
+    </a> -->
 {
   Object.entries(languages).map(([langPrexif, label]) => {
     if(langPrexif == lang)  return <></>
