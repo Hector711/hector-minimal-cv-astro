@@ -121,6 +121,17 @@
       ]
     },
     {
+      "company": "We Are Sales",
+      "position": "Comercial de ventas",
+      "url": "https://www.wearesales.es/",
+      "startDate": "1/11/2019",
+      "endDate": "1/11/2020",
+      "summary": "Aquí desarrollé mis habilidades de ventas a puerta fría. Demostré capacidad para establecer relaciones efectivas con clientes potenciales y alcanzar objetivos de ventas en un entorno impredecible y desafiante.",
+      "highlights": [
+        ""
+      ]
+    },
+    {
       "company": "Música Creativa",
       "position": "Técnico Sonido",
       "url": "https://musicacreativa.com/",
@@ -193,6 +204,6 @@
   ],
   "extras": {
     "specialMessage": "Es posible que estés agotad@ de revisar tantos portfolios y currículums... Por eso he preparado un breve video de 1 minuto donde comparto todo lo que necesitas saber sobre mí. ¡Espero que lo encuentres interesante! :)",
-    "videoResumeLink": ""
+    "videoResumeLink": "..."
   }
 }
