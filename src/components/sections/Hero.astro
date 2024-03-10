@@ -91,7 +91,7 @@ const githubUsername = githubInfo?.username;
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <Icon class="icon"> </Icon>
+                  <Icon /> 
                 </a>
               );
             })
@@ -110,7 +110,7 @@ const githubUsername = githubInfo?.username;
     <figure>
       <Image id="img" src={image} width="140" height="140" alt={name} />
 
-      <!-- <img src={image} alt={name} /> -->
+    
     </figure>
   </div>
 </Section>
@@ -158,7 +158,6 @@ const githubUsername = githubInfo?.username;
   }
 
   #img {
-    /* aspect-ratio: 1/1; */
     object-fit: cover;
     border-radius: 25px;
   }
@@ -208,6 +207,7 @@ const githubUsername = githubInfo?.username;
     border-radius: 6px;
     transition: all 0.3s ease;
   }
+  
 
   footer a:hover {
     background: var(--light);
@@ -229,6 +229,9 @@ const githubUsername = githubInfo?.username;
       height: 42px;
       width: 42px;
     }
+    a > p{
+    font-size: 1.1rem;
+  }
 
     h1 {
       text-align: center;
