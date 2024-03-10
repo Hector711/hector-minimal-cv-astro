@@ -10,13 +10,12 @@ import LocationIcon from "@/icons/LocationIcon.astro";
 import { Image } from "astro:assets";
 
 import { getLangFromUrl, useTranslations } from "@/i18n/utils.ts";
-const { currentLocale } = Astro
+const { currentLocale } = Astro;
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
-import { getI18N } from "@/i18n/index"
-const i18n = getI18N({ currentLocale })
-const basics = i18n.basics
-
+import { getI18N } from "@/i18n/index";
+const i18n = getI18N({ currentLocale });
+const basics = i18n.basics;
 
 const { name, label, image, location, profiles, phone, email, nickname } =
   basics;
@@ -92,7 +91,7 @@ const githubUsername = githubInfo?.username;
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <Icon />
+                  <Icon class="icon"> </Icon>
                 </a>
               );
             })
@@ -109,7 +108,6 @@ const githubUsername = githubInfo?.username;
       </footer>
     </div>
     <figure>
-      
       <Image id="img" src={image} width="140" height="140" alt={name} />
 
       <!-- <img src={image} alt={name} /> -->
@@ -144,6 +142,8 @@ const githubUsername = githubInfo?.username;
     flex-direction: column;
     gap: 0.5rem;
   }
+
+
 
   h1 {
     font-size: 2.2rem;
@@ -224,10 +224,14 @@ const githubUsername = githubInfo?.username;
         align-items: center;
       }
     }
-    
+    footer a {
+      /* aspect-ratio: 1/1; */
+      height: 42px;
+      width: 42px;
+    }
+
     h1 {
       text-align: center;
-
     }
   }
 </style>
