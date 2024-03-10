@@ -1,19 +1,19 @@
 ---
-import Section from "../Section.astro";
-import Mail from "../../icons/Mail.astro";
-import Phone from "../../icons/Phone.astro";
-import X from "../../icons/X.astro";
-import GitHub from "../../icons/GitHub.astro";
-import Instagram from "../../icons/Instagram.astro";
-import LinkedIn from "../../icons/LinkedIn.astro";
-import LocationIcon from "../../icons/LocationIcon.astro";
+import Section from "@/components/Section.astro";
+import Mail from "@/icons/Mail.astro";
+import Phone from "@/icons/Phone.astro";
+import X from "@/icons/X.astro";
+import GitHub from "@/icons/GitHub.astro";
+import Instagram from "@/icons/Instagram.astro";
+import LinkedIn from "@/icons/LinkedIn.astro";
+import LocationIcon from "@/icons/LocationIcon.astro";
 import { Image } from "astro:assets";
 
-import { getLangFromUrl, useTranslations } from "../../i18n/utils.ts";
+import { getLangFromUrl, useTranslations } from "@/i18n/utils.ts";
 const { currentLocale } = Astro
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
-import { getI18N } from "../../i18n/index"
+import { getI18N } from "@/i18n/index"
 const i18n = getI18N({ currentLocale })
 const basics = i18n.basics
 
@@ -119,7 +119,7 @@ const githubUsername = githubInfo?.username;
 
 <!-- ========================= ESTILOS ========================= -->
 <style>
-  @import url("../../variables.css");
+  @import url("@/css/variables.css");
 
   * {
     /* border: 0.5px solid black; */

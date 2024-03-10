@@ -1,13 +1,13 @@
 ---
-import Section from "../Section.astro";
+import Section from "@/components/Section.astro";
 
-import { getLangFromUrl, useTranslations } from "../../i18n/utils.ts";
+import { getLangFromUrl, useTranslations } from "@/i18n/utils.ts";
 const { currentLocale } = Astro
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 
 
-import { getI18N } from "../../i18n/index"
+import { getI18N } from "@/i18n/index"
 const i18n = getI18N({ currentLocale })
 const projects = i18n.projects
 ---
@@ -40,7 +40,8 @@ const projects = i18n.projects
 </Section>
 
 <style>
-  @import url("../../variables.css");
+  @import url("@/css/variables.css");
+
 
   ul {
     display: grid;

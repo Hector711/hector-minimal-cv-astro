@@ -1,14 +1,20 @@
 {
   "extends": "astro/tsconfigs/strict",
   "compilerOptions": {
-    "baseUrl": "/Users/hectorio/Desktop/PROYECTOS/hector-minimalist-cv",
+    "baseUrl": ".",
     "paths": {
-      "@cv": [
+      "@/*": [
+        "./src/*"
+      ],
+      "@cv-es": [
         "./cv-es.json"
       ],
-      "@/*": [
-        "src/*"
-      ]
+      "@cv-en": [
+        "./cv-en.json"
+      ],
+      "@/sections/*": [
+        "./src/components/sections/*"
+      ],
     },
     "jsx": "react-jsx",
     "jsxImportSource": "react"

@@ -1,15 +1,14 @@
 ---
-import Section from "../Section.astro";
-import Arrow from "../../icons/Arrow.astro";
+import Section from "@/components/Section.astro";
+import Arrow from "@/icons/Arrow.astro";
 
-// import { education } from "../../../cv-es.json";
 
-import { getLangFromUrl, useTranslations } from "../../i18n/utils.ts";
+import { getLangFromUrl, useTranslations } from "@/i18n/utils.ts";
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 
 const { currentLocale } = Astro
-import { getI18N } from "../../i18n/index"
+import { getI18N } from "@/i18n/index"
 const i18n = getI18N({ currentLocale })
 const education = i18n.education
 ---
@@ -45,7 +44,7 @@ const education = i18n.education
 </Section>
 
 <style>
-  @import url("../../variables.css");
+  @import url("@/css/variables.css");
 
   * {
     /* border: 0.5px solid black; */
