@@ -1,7 +1,8 @@
+
 # Currículum Minimalista 
 
-Aquí podrás encontrar una versión minimalista de mi currículum, donde además tendrás la opción de explorarlo y descargarlo de manera sencilla.
-------------
+#### Una versión minimalista de mi currículum, donde además tendrás la opción de crearte el tuyo propio!
+
 
 Este proyecto ha sido inspirado por el gran Midudev y su video tutorial:
 #### "Aprende a Crear un Portfolio Web para Programadores"
@@ -15,8 +16,8 @@ Este proyecto ha sido inspirado por el gran Midudev y su video tutorial:
 
 
 En la raiz del proyecto encontraras dos JSON donde tendrás que introducir tus datos.
-   - "cv-es.json": Aqui introduce tus datos en español.
-   - "cv-en.json": Aqui introduce tus datos traducidos al inglés. (Te recomiendo usar ChatGPT)
+   - "cv-es.json": Aqui tus datos en español.
+   - "cv-en.json": Aqui tus datos traducidos al inglés. (Te recomiendo usar ChatGPT)
 
 Y listo!
 
