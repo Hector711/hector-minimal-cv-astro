@@ -154,30 +154,16 @@
   ],
   "projects": [
     {
-      "name": "Minimal CV Maker",
-      "isActive": false,
+      "name": "Mera Parivar MVP",
+      "isActive": true,
       "year": "2024",
-      "description": "Coming soon...",
+      "description": "Led the Full Stack team on the Mera Parivar project, collaborating with UX/UI, Marketing, Data Science, and Cybersecurity. Successfully presented the project, highlighting our contribution to the Indian company.",
       "highlights": [
         "ReactJS",
-        "Astro",
         "Tailwind",
         "SQL"
       ],
-      "url": "https://www.linkedin.com/in/hector711/"
-    },
-    {
-      "name": "RACKS Wallpaper",
-      "isActive": false,
-      "year": "2024",
-      "description": "Coming soon...",
-      "description2": "With love dedicated to the Racks community: Customize your desktop and improve your productivity with this Racks-style wallpaper!",
-      "highlights": [
-        "React",
-        "NextJS",
-        "Tailwind"
-      ],
-      "url": "https://www.linkedin.com/in/hector711/"
+      "url": "https://mera-parivar-web-page.vercel.app"
     }
   ],
   "languages": [
