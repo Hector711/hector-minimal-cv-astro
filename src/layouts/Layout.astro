@@ -1,14 +1,13 @@
 ---
 // Supports weights 100-900
 import "@fontsource-variable/onest";
-import Options from "@/sections/Options.astro";
 interface Props {
   title: string;
 }
 
 
 const { title } = Astro.props;
-
+import Options from "@/sections/Options.astro";
 const { currentLocale } = Astro
 console.log({currentLocale})
 ---
@@ -38,13 +37,12 @@ console.log({currentLocale})
   }
 
   html{
-    background-color: var(--softWhite);
     letter-spacing: -0.0005rem;
   }
 
   main {
     padding-inline: 4rem;
-    padding-block: 3rem;
+    padding-block: 2rem;
     margin: auto;
     width: 100%;
   }
