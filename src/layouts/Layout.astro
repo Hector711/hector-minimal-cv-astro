@@ -5,11 +5,10 @@ interface Props {
   title: string;
 }
 
-
 const { title } = Astro.props;
 import Options from "@/sections/Options.astro";
-const { currentLocale } = Astro
-console.log({currentLocale})
+const { currentLocale } = Astro;
+console.log({ currentLocale });
 ---
 
 <!doctype html>
@@ -22,7 +21,7 @@ console.log({currentLocale})
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
-  <body> 
+  <body>
     <Options id="no-print" />
     <slot />
   </body>
@@ -33,10 +32,10 @@ console.log({currentLocale})
   @import url("@/css/variables.css");
 
   * {
-  /* border: 0.5px solid black; */
+    /* border: 0.5px solid black; */
   }
 
-  html{
+  html {
     letter-spacing: -0.0005rem;
   }
 
@@ -78,7 +77,8 @@ console.log({currentLocale})
     color: var(--black);
   }
 
-  h1, h2 {
+  h1,
+  h2 {
     font-family:
       system-ui,
       -apple-system,
@@ -93,7 +93,9 @@ console.log({currentLocale})
       sans-serif;
   }
 
-  html, h3, h4 {
+  html,
+  h3,
+  h4 {
     font-family: "Onest Variable", BlinkMacSystemFont, "Segoe UI", Roboto,
       Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   }
@@ -101,6 +103,7 @@ console.log({currentLocale})
   h3 {
     font-weight: 600;
   }
+  
 
   p {
     color: var(--softGrey);
@@ -157,6 +160,4 @@ console.log({currentLocale})
       padding-top: 4px;
     }
   }
-
-
 </style>
