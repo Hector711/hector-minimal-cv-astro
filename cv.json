@@ -2,7 +2,7 @@
   "basics": {
     "nickname": "Héctor",
     "name": "Héctor Guerra",
-    "label": "Full Stack Developer",
+    "label": "--TR--",
     "image": "https://i.ibb.co/YhTCcWd/carnet2024.jpg",
     "image2": "https://i.ibb.co/HNq6rdk/IMG-8747-2.jpg",
     "email": "hectorluengo.xx@gmail.com",
@@ -10,7 +10,7 @@
     "url": "https://www.linkedin.com/in/hector711/",
     "dni": "06020333Z",
     "birth": "15/04/1997",
-    "summary": "Beginner developer with a deep interest in programming and a strong determination to enter the tech world. Actively seeking my first job opportunity as a programmer, with the ambition to build a solid and lasting career.",
+    "summary": "--TR--",
     "location": {
       "postalCode": "28004",
       "city": "Madrid",
@@ -45,17 +45,21 @@
     ]
   },
   "technologies": {
-    "main": [
+    "main":[
       {
         "name": "ReactJS",
         "icon": "..."
       },
       {
-        "name": "NextJS",
+        "name": "MongoDB",
         "icon": "..."
       },
       {
         "name": "Astro",
+        "icon": "..."
+      },
+      {
+        "name": "TailwindCSS",
         "icon": "..."
       }
     ],
@@ -76,56 +80,56 @@
   },
   "work": [
     {
-      "company": "Conde Duque Fruit Shop",
-      "position": "Freelancer",
+      "company": "--TR--",
+      "position": "--TR--",
       "url": "https://www.google.com/maps?hl=es&gl=es&um=1&ie=UTF-8&fb=1&sa=X&ftid=0xd4229b14463e331:0xf703f76022ca0f93",
       "startDate": "1/1/2023",
       "endDate": "1/4/2024",
-      "summary": "In this business, along with my father, I was in charge of all business operations, administration, customer service, product design, organization, process optimization, and whatever was necessary.",
+      "summary": "--TR--",
       "highlights": [
         ""
       ]
     },
     {
-      "company": "Harvey's Cocktail Bar",
+      "company": "Harvey's Cockatil Bar",
       "position": "Bartender",
       "url": "https://www.elconfidencial.com/espana/madrid/2021-12-07/conceteles-norteamericanos-fuencarral_3336105/",
       "startDate": "1/6/2022",
       "endDate": "1/6/2023",
-      "summary": "I worked as a bartender in a highly prestigious venue. Developed skills in mixology, tray handling, and customer service.",
+      "summary": "--TR--",
       "highlights": [
         ""
       ]
     },
     {
-      "company": "A'BARRA Restaurant",
-      "position": "Waiter",
+      "company": "--TR--",
+      "position": "--TR--",
       "url": "https://elpais.com/elviajero/2020/01/16/actualidad/1579167119_415633.html#",
       "startDate": "1/11/2020",
       "endDate": "1/11/2021",
-      "summary": "I provided services in a Michelin-starred restaurant, in a high-demand and high-pressure environment.",
+      "summary": "--TR--",
       "highlights": [
         ""
       ]
     },
     {
       "company": "We Are Sales",
-      "position": "Sales Representative",
+      "position": "--TR--",
       "url": "https://www.wearesales.es/",
       "startDate": "1/11/2019",
       "endDate": "1/11/2020",
-      "summary": "Here I developed my cold calling sales skills. Demonstrated the ability to establish effective relationships with potential clients and achieve sales goals in an unpredictable and challenging environment.",
+      "summary": "--TR--",
       "highlights": [
         ""
       ]
     },
     {
       "company": "Música Creativa",
-      "position": "Sound Technician",
+      "position": "--TR--",
       "url": "https://musicacreativa.com/",
       "startDate": "1/5/2018",
       "endDate": "1/10/2019",
-      "summary": "As a sound technician, I managed the setup and operation of audio equipment at live events.",
+      "summary": "--TR--",
       "highlights": [
         ""
       ]
@@ -135,19 +139,19 @@
     {
       "name": "Full Stack Web Developer",
       "institution": "The Bridge School",
-      "endDate": "April 2024",
+      "endDate": "--TR--",
       "url": "https://www.thebridge.tech"
     },
     {
       "name": "Bartender",
       "institution": "ESCOM",
-      "endDate": "June 2022",
+      "endDate": "--TR--",
       "url": "https://www.escuelacocteleria.es"
     },
     {
-      "name": "Sound Technician",
-      "institution": "Escuela Musica Creativa",
-      "endDate": "June 2021",
+      "name": "--TR--",
+      "institution": "Escuela Música Creativa",
+      "endDate": "--TR--",
       "url": "https://musicacreativa.com"
     }
   ],
@@ -156,7 +160,7 @@
       "name": "Mera Parivar MVP",
       "isActive": true,
       "year": "2024",
-      "description": "Led the Full Stack team, collaborating with UX/UI, Marketing, Data Science, and Cybersecurity. Our goal: to develop a technological solution that would optimize their processes, expand their reach, and increase revenue.",
+      "description": "--TR--",
       "highlights": [
         "ReactJS",
         "Tailwind",
@@ -169,11 +173,11 @@
   ],
   "languages": [
     {
-      "language": "Spanish",
-      "fluency": "Native"
+      "language": "--TR--",
+      "fluency": "--TR--"
     },
     {
-      "language": "English",
+      "language": "--TR--",
       "fluency": "C1"
     }
   ]

@@ -13,7 +13,7 @@ const work = i18n.work
 ---
 <br id="print">
 <Section title={t("section.experience")}>
-  <ul>
+  <ul >
     {
       work.map(({ company, startDate, endDate, position, url, summary }) => {
         const startYear = new Date(startDate).getFullYear();

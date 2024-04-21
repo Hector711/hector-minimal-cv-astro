@@ -4,10 +4,7 @@ interface Props {
   title: string;
 }
 
-
 const { title } = Astro.props;
-
-
 
 // import Layout from '@/layouts/Layout.astro';
 import Layout from "@/layouts/Layout.astro";
@@ -27,7 +24,7 @@ const i18n = getI18N({ currentLocale })
 
 <Layout title=`${i18n.basics.nickname} Minimalist Portfolio`>
   
-  <main>
+  <main class="animate-fade-in-up">
     <Hero />
     <About />
     <Projects />

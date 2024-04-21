@@ -17,6 +17,9 @@ dependencies:
   '@fontsource-variable/onest':
     specifier: ^5.0.2
     version: 5.0.2
+  '@midudev/tailwind-animations':
+    specifier: ^0.0.7
+    version: 0.0.7(tailwindcss@3.4.1)
   '@types/react':
     specifier: ^18.2.61
     version: 18.2.61
@@ -676,6 +679,14 @@ packages:
 
   /@medv/finder@3.2.0:
     resolution: {integrity: sha512-JmU7JIBwyL8RAzefvzALT4sP2M0biGk8i2invAgpQmma/QgfsaqoHIvJ7S0YC8n9hUVG8X3Leul2nGa06PvhbQ==}
+
+  /@midudev/tailwind-animations@0.0.7(tailwindcss@3.4.1):
+    resolution: {integrity: sha512-K897X4NvM3tV2/R7aCjl6gJ6msWSTqQtcAwb5VX5D5+m/Mo650mEFoeODwqzaePYNro5BTGyXXFQw/kiHBZlUA==}
+    peerDependencies:
+      tailwindcss: ^3.0.0
+    dependencies:
+      tailwindcss: 3.4.1
+    dev: false
 
   /@nodelib/fs.scandir@2.1.5:
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
