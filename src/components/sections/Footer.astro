@@ -1,0 +1,73 @@
+---
+import Section from "../Section.astro";
+---
+
+<footer id="no-print">
+  <div id="section">
+
+    <p>Inspired by Midudev.</p>
+    <a href="https://hector711.github.io" target="_blank">My Official Web Page</a>
+    <p>Made with Love, Astro & TypeScript.</p>
+  </div>
+  </footer>
+
+<style>
+  * {
+    /* border: 1px solid rgb(184, 9, 9); */
+  }
+  footer {
+    position: absolute;
+    width: 100%;
+    /* border: 3px solid var(--darkGrey); */
+    box-shadow: var(--shadow-s);
+
+    display: flex;
+    flex-direction: row;
+    /* justify-content: flex-start; */
+    align-items: flex-start;
+    padding-top: 1rem;
+    height: 7rem;
+
+    margin-inline: auto;
+    transition: all 0.3s ease;
+  }
+  #section {
+    max-width: 700px;
+    width: 100%;
+    display: flex;
+    margin-inline: auto;
+    justify-content: space-between;
+  }
+  #section * {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+ 
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid var(--softGrey);
+    padding: 0 10px;
+    height: 40px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    /* width: 150px; */
+    font-size: 1rem;
+    color: var(--softGrey);
+  }
+
+  a:hover {
+    background: var(--light);
+    border: 2px solid var(--softWhite);
+  }
+
+  /* @media print {
+    nav {
+      display: none;
+    }
+  } */
+</style>

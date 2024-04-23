@@ -6,7 +6,8 @@ interface Props {
 }
 
 const { title } = Astro.props;
-import Options from "@/sections/Options.astro";
+import Options from "@/components/sections/Navbar.astro";
+import Footer from "@/components/sections/Footer.astro";
 const { currentLocale } = Astro;
 console.log({ currentLocale });
 ---
@@ -24,6 +25,7 @@ console.log({ currentLocale });
   <body>
     <Options id="no-print" />
     <slot />
+    <!-- <Footer /> -->
   </body>
 </html>
 

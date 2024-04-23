@@ -7,8 +7,9 @@ import Education from "@/sections/Education.astro";
 import Experience from "@/sections/Experience.astro";
 import Hero from "@/sections/Hero.astro";
 import Projects from "@/sections/Projects.astro";
-import Languages from "@/sections/Languages.astro";
-import KeyboardManager from "@/components/KeyboardManager.astro";
+import Languages from "@/components/sections/Languages.astro";
+// import KeyboardManager from "@/components/KeyboardManager.astro";
+import Footer from "@/components/sections/Footer.astro";
 
 import { getI18N } from "@/i18n/index";
 const { currentLocale } = Astro
@@ -27,8 +28,8 @@ const i18n = getI18N({ currentLocale })
     <Experience />
     <!-- <Languages /> -->
   </main>
-
-  <KeyboardManager />
+  <!-- <Footer /> -->
+  <!-- <KeyboardManager /> -->
 </Layout>
 
 
