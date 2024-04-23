@@ -13,11 +13,14 @@ export const ui = {
     'section.languages': 'Idiomas',
     'section.options': 'Opciones',
     'section.projects': 'Proyectos',
-    'hero.webPage': 'Página Web Official',
+    'hero.webPage': 'Página Web Oficial',
     'at': 'en',
     'download': 'Descargar',
     'comands': 'Comandos',
-    'language': 'Language'
+    'language': 'Language',
+    'footer.myWebPage': 'My Official Web Page',
+    'footer.inspiredBy': 'Inspired by Midudev',
+    'footer.madeWith': 'Made with Love Astro y TypeScript',
     
   },
   en: {
@@ -31,7 +34,12 @@ export const ui = {
     'at': 'at',
     'download': 'Download',
     'comands': 'Comands',
-    'language': 'Idioma'
+    'language': 'Idioma',
+    'footer.myWebPage': 'Mi Página Web Oficial',
+    'footer.inspiredBy': 'Inspirada en Midudev',
+    'footer.madeWith': 'Hecha con Amor, Astro y TypeScript',
+
+
 
   },
 } as const;
