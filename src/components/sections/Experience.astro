@@ -11,7 +11,7 @@ import { getI18N } from "@/i18n/index"
 const i18n = getI18N({ currentLocale })
 const work = i18n.work
 ---
-<br id="print">
+<!-- <br id="print"> -->
 <Section title={t("section.experience")}>
   <ul >
     {
@@ -120,7 +120,7 @@ const work = i18n.work
   }
   @media print {
     #print {
-      page-break-before: always;
+      page-break-before: auto;
     }
   }
 </style>

@@ -10,8 +10,9 @@ const i18n = getI18N({ currentLocale })
 
 const languages = i18n.languages
 ---
-<div id="print">
-</div>
+<!-- <div id="print">
+</div> -->
+<br id="print">
 <Section title={t("section.languages")}>
   <ul>
     {
@@ -71,9 +72,9 @@ const languages = i18n.languages
     bottom: 0;
   }
 
-  /* @media print {
+  @media print {
     #print {
-      page-break-before: always;
+      page-break-before: auto;
     }
-  } */
+  }
 </style>
