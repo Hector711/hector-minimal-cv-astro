@@ -4,7 +4,6 @@
     "name": "Héctor Guerra",
     "label": "Programador Full Stack",
     "image": "https://i.ibb.co/s5smtmL/profile-pic.jpg",
-    "image2": "https://i.ibb.co/HNq6rdk/IMG-8747-2.jpg",
     "email": "hectorluengo.xx@gmail.com",
     "phone": "+34 722396259",
     "url": "https://www.linkedin.com/in/hector711/",
@@ -21,26 +20,23 @@
       {
         "network": "LinkedIn",
         "username": "@Hector711",
-        "url": "https://www.linkedin.com/in/hector711/",
-        "icon": "https://cdn3.iconfinder.com/data/icons/picons-social/57/11-linkedin-512.png"
+        "url": "https://www.linkedin.com/in/hector711/"
       },
       {
         "network": "GitHub",
         "username": "@Hector711",
-        "url": "https://github.com/Hector711",
-        "icon": "https://cdn-icons-png.flaticon.com/512/25/25231.png"
+        "url": "https://github.com/Hector711"
       },
       {
         "network": "X",
         "username": "@vltrasensorial",
-        "url": "https://twitter.com/vltrasensorial",
-        "icon": "https://cdn2.iconfinder.com/data/icons/threads-by-instagram/24/x-logo-twitter-new-brand-512.png"
+        "url": "https://twitter.com/vltrasensorial"
       },
       {
         "network": "Instagram",
         "username": "@hectoor.xx",
-        "url": "https://www.instagram.com/hectoor.xx?igsh=MWp5dTBubDl3YjY0ag%3D%3D&utm_source=qr",
-        "icon": "https://cdn2.iconfinder.com/data/icons/threads-by-instagram/24/x-logo-twitter-new-brand-512.png"
+        "url": "https://www.instagram.com/hectoor.xx?igsh=MWp5dTBubDl3YjY0ag%3D%3D&utm_source=qr"
+
       }
     ]
   },
