@@ -1,7 +1,7 @@
 
 # Currículum Minimalista 
 
-### Una versión minimalista de mi currículum, donde además tendrás la opción de crearte el tuyo propio!
+### Una versión minimalista de mi currículum, donde además tendrás la opción de crearte el tuyo propio!!
 
 
 
